@@ -7,7 +7,8 @@ Route::get(
     'PagesController@about'
 )->name('about');
 
-Route::match(['GET', 'POST'],
+Route::match(
+    ['GET', 'POST'],
     LaravelLocalization::transRoute('routes.contact'),
     'PagesController@contact'
 )->name('contact');
@@ -23,9 +24,9 @@ Route::get(
 )->name('legal-mentions');
 
 if (config('blog.enabled')) {
-    Route::get('blog', 'BlogController@index')->name('blog.index');
-    Route::get('blog/{post}', 'BlogController@show')->name('blog.show');
-    Route::get('blog/tags/{tag}', 'BlogController@tag')->name('blog.tag');
+    Route::get('announcements', 'BlogController@index')->name('blog.index');
+    Route::get('announcements/{post}', 'BlogController@show')->name('blog.show');
+    Route::get('announcements/tags/{tag}', 'BlogController@tag')->name('blog.tag');
 
     Route::get(
         LaravelLocalization::transRoute('routes.redactors'),

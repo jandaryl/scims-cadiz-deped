@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Administration | {{ config('app.name') }}</title>
+    <title>Administration</title>
 
     <!-- Styles -->
     @if ($stylePath = Html::asset('backend', 'backend.css'))
@@ -38,7 +38,12 @@
             'permissions' => session()->get('permissions'),
             'isImpersonation' => session()->has('admin_user_id') && session()->has('temp_user_id'),
             'usurperName' => session()->get('admin_user_name'),
-            'blogEnabled' => config('blog.enabled')
+            'blogEnabled' => config('blog.enabled'),
+            'multiLanguage' => config('features.multi-language'),
+            'formSettings'      => config('features.form-settings'),
+            'formSubmissions'   => config('features.form-submissions'),
+            'metas'             => config('features.metas'),
+            'redirection'       => config('features.redirection')
         ]) !!}
     </script>
 

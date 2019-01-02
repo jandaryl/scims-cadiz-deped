@@ -49,12 +49,7 @@ Breadcrumbs::register('legal-mentions', function (BreadcrumbsGenerator $breadcru
     $breadcrumbs->push(trans('labels.frontend.titles.legal_mentions'), route('legal-mentions'));
 });
 
-Breadcrumbs::register('user.home', function (BreadcrumbsGenerator $breadcrumbs) {
-    $breadcrumbs->parent('home');
-    $breadcrumbs->push(trans('labels.user.titles.space'), route('user.home'));
-});
-
 Breadcrumbs::register('user.account', function (BreadcrumbsGenerator $breadcrumbs) {
-    $breadcrumbs->parent('user.home');
+    $breadcrumbs->parent('home');
     $breadcrumbs->push(trans('labels.user.titles.account'), route('user.account'));
 });

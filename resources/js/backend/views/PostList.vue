@@ -83,13 +83,6 @@
               @change="onPinToggle(row.item.id)"
             ></c-switch>
           </template>
-          <template slot="promoted" slot-scope="row">
-            <c-switch
-              v-if="row.item.can_edit"
-              :checked="row.value"
-              @change="onPromoteToggle(row.item.id)"
-            ></c-switch>
-          </template>
           <template slot="owner" slot-scope="row">
             <span v-if="row.item.owner">{{ row.item.owner.name }}</span>
             <span v-else>{{ $t('labels.anonymous') }}</span>
@@ -166,11 +159,6 @@ export default {
           label: this.$t('validation.attributes.pinned'),
           class: 'text-center'
         },
-        {
-          key: 'promoted',
-          label: this.$t('validation.attributes.promoted'),
-          class: 'text-center'
-        },
         { key: 'owner', label: this.$t('labels.author'), sortable: true },
         {
           key: 'posts.created_at',
@@ -189,8 +177,7 @@ export default {
       actions: {
         destroy: this.$t('labels.backend.posts.actions.destroy'),
         publish: this.$t('labels.backend.posts.actions.publish'),
-        pin: this.$t('labels.backend.posts.actions.pin'),
-        promote: this.$t('labels.backend.posts.actions.promote')
+        pin: this.$t('labels.backend.posts.actions.pin')
       }
     }
   },
@@ -207,13 +194,6 @@ export default {
     onPinToggle(id) {
       axios
         .post(this.$app.route('admin.posts.pinned', { post: id }))
-        .catch(error => {
-          this.$app.error(error)
-        })
-    },
-    onPromoteToggle(id) {
-      axios
-        .post(this.$app.route('admin.posts.promoted', { post: id }))
         .catch(error => {
           this.$app.error(error)
         })

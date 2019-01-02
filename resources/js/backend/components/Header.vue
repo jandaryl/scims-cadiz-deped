@@ -36,14 +36,6 @@
             }}
           </b-dropdown-item>
           <b-dropdown-item
-            to="/form-settings/create"
-            v-if="this.$app.user.can('create form_settings')"
-          >
-            <i class="fe fe-sliders"></i>&nbsp;&nbsp;{{
-              $t('labels.backend.new_menu.form_setting')
-            }}
-          </b-dropdown-item>
-          <b-dropdown-item
             to="/users/create"
             v-if="this.$app.user.can('create users')"
           >
@@ -58,37 +50,6 @@
             <i class="fe fe-shield"></i>&nbsp;&nbsp;{{
               $t('labels.backend.new_menu.role')
             }}
-          </b-dropdown-item>
-          <b-dropdown-item
-            to="/metas/create"
-            v-if="this.$app.user.can('create metas')"
-          >
-            <i class="fe fe-tag"></i>&nbsp;&nbsp;{{
-              $t('labels.backend.new_menu.meta')
-            }}
-          </b-dropdown-item>
-          <b-dropdown-item
-            to="/redirections/create"
-            v-if="this.$app.user.can('create redirections')"
-          >
-            <i class="fe fe-fast-forward"></i>&nbsp;&nbsp;{{
-              $t('labels.backend.new_menu.redirection')
-            }}
-          </b-dropdown-item>
-        </template>
-      </HeaderDropdown>
-      <HeaderDropdown right class="px-3 d-none d-md-block">
-        <template slot="header">
-          <span class="d-md-down-none">{{ $t('labels.language') }}</span>
-        </template>
-        <template slot="dropdown">
-          <b-dropdown-item
-            :key="index"
-            v-for="(locale, index) in this.$app.locales"
-            :hreflang="index"
-            :href="`/${index}/${$app.adminPathName}${$route.fullPath}`"
-          >
-            {{ locale.native }}
           </b-dropdown-item>
         </template>
       </HeaderDropdown>
@@ -115,7 +76,7 @@
         </template>
       </HeaderDropdown>
     </b-navbar-nav>
-    <AsideToggler class="d-none d-lg-block"></AsideToggler>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;</div>
   </AppHeader>
 </template>
 

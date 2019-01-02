@@ -10,7 +10,11 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    {!! SEOMeta::generate() !!}
+    @if (config("features.seometa"))
+        {!! SEOMeta::generate() !!}
+    @else
+        <title>Division of Cadiz City</title>
+    @endif
 
     @if (config("features.multi-language"))
         @if (count(config('laravellocalization.supportedLocales')) > 1)

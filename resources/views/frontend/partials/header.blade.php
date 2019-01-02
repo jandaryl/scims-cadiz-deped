@@ -35,8 +35,8 @@
                     @endif
                 @endif
                 @guest
-                    <!-- <a class="nav-link" href="{{ route('login') }}">@lang('labels.user.login')</a> -->
-                    <a class="nav-link" href="{{ route('admin.login') }}">@lang('labels.user.login')</a>
+                    <a class="nav-link" href="{{ route('login') }}">@lang('labels.user.login')</a>
+                    <!-- <a class="nav-link" href="{{ route('admin.login') }}">@lang('labels.user.login')</a> -->
                     @if (config('account.can_register'))
                         <a class="nav-link" href="{{ route('register') }}">@lang('labels.user.register')</a>
                     @endif

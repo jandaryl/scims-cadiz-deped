@@ -51,7 +51,7 @@ class PostController extends BackendController
     {
         $query = $this->posts->query();
 
-        if (! Gate::check('view posts')) {
+        if (!Gate::check('view posts')) {
             // Filter to only current user's posts
             $query->whereUserId(auth()->id());
         }
@@ -73,7 +73,7 @@ class PostController extends BackendController
         /** @var Builder $query */
         $query = $this->posts->query();
 
-        if (! Gate::check('view posts')) {
+        if (!Gate::check('view posts')) {
             // Filter to only current user's posts
             $query->whereUserId(auth()->id());
         }
@@ -88,14 +88,14 @@ class PostController extends BackendController
         ]);
 
         if ($request->get('exportData')) {
-            return $requestSearchQuery->export([
-                'title',
-                'status',
-                'pinned',
-                'promoted',
-                'posts.created_at',
-                'posts.updated_at',
-            ],
+            return $requestSearchQuery->export(
+                [
+                    'title',
+                    'status',
+                    'pinned',
+                    'posts.created_at',
+                    'posts.updated_at',
+                ],
                 [
                     __('validation.attributes.title'),
                     __('validation.attributes.status'),
@@ -104,7 +104,8 @@ class PostController extends BackendController
                     __('labels.created_at'),
                     __('labels.updated_at'),
                 ],
-                'posts');
+                'posts'
+            );
         }
 
         return $requestSearchQuery->result([
@@ -115,7 +116,6 @@ class PostController extends BackendController
             'posts.slug',
             'status',
             'pinned',
-            'promoted',
             'posts.created_at',
             'posts.updated_at',
         ]);
@@ -247,12 +247,12 @@ class PostController extends BackendController
     public function pinToggle(Post $post)
     {
         $this->authorize('edit posts');
-        $post->update(['pinned' => ! $post->pinned]);
+        $post->update(['pinned' => !$post->pinned]);
     }
 
     public function promoteToggle(Post $post)
     {
         $this->authorize('edit posts');
-        $post->update(['promoted' => ! $post->promoted]);
+        $post->update(['promoted' => !$post->promoted]);
     }
 }

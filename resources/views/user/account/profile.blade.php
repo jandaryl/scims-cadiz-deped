@@ -13,14 +13,6 @@
         <td>{{ $loggedInUser->email }}</td>
     </tr>
     <tr>
-        <th>@lang('validation.attributes.locale')</th>
-        <td>{{ $loggedInUser->locale }}</td>
-    </tr>
-    <tr>
-        <th>@lang('validation.attributes.timezone')</th>
-        <td>{{ $loggedInUser->timezone }}</td>
-    </tr>
-    <tr>
         <th>@lang('labels.created_at')</th>
         <td>{{ $loggedInUser->created_at->setTimezone($loggedInUser->timezone) }}
             ({{ $loggedInUser->created_at->diffForHumans() }})

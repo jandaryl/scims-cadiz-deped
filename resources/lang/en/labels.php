@@ -65,13 +65,8 @@ return [
 
     'localization' => [
         'en' => 'English',
-        'ru' => 'Russian',
         'fr' => 'French',
         'es' => 'Spanish',
-        'de' => 'German',
-        'zh' => 'Chinese',
-        'ar' => 'Arab',
-        'pt' => 'Portuguese',
     ],
 
     'placeholders' => [
@@ -98,6 +93,7 @@ return [
         'password_reset'            => 'Password Reset',
         'register'                  => 'Register',
         'space'                     => 'My space',
+        'memo'                      => 'My Memo',
         'settings'                  => 'Settings',
         'account'                   => 'My account',
         'profile'                   => 'My profile',
@@ -110,7 +106,9 @@ return [
         'member_since'              => 'Member since :date',
         'profile_updated'           => 'Profile successfully updated.',
         'password_updated'          => 'Password successfully updated.',
-        'super_admin'               => 'Super administrator',
+        'email_confirmation_sended' => 'Mail confirmation sended.',
+        'email_confirmed'           => 'Email successfully confirmed.',
+        'super_admin'               => 'Super Administrator',
 
         'account_delete'  => '<p>This action will delete entirely your account from this site as well as all associated data.</p>',
         'account_deleted' => 'Account successfully deleted',
@@ -123,6 +121,7 @@ return [
 
     'alerts' => [
         'login_as'      => 'You are actually logged as <strong>:name</strong>, you can logout as <a href=":route" data-turbolinks="false">:admin</a>.',
+        'not_confirmed' => 'Your account will be in limited mode as long as your email remains not confirmed. <a href=":route">Click here</a> in order to resend mail confirmation.',
     ],
 
     'backend' => [
@@ -132,15 +131,15 @@ return [
             'published_posts'      => 'Published posts',
             'active_users'         => 'Active users',
             'form_submissions'     => 'Submissions',
-            'last_posts'           => 'Last posts',
+            'last_posts'           => 'Last announcements',
             'last_published_posts' => 'Last publications',
-            'last_pending_posts'   => 'Last pending posts',
-            'last_new_posts'       => 'Last new posts',
-            'all_posts'            => 'All posts',
+            'last_pending_posts'   => 'Last pending announcements',
+            'last_new_posts'       => 'Last new announcements',
+            'all_posts'            => 'All announcements',
         ],
 
         'new_menu' => [
-            'post'         => 'New post',
+            'post'         => 'New announcement',
             'form_setting' => 'New form setting',
             'user'         => 'New user',
             'role'         => 'New role',
@@ -168,9 +167,9 @@ return [
             ],
 
             'actions' => [
-                'destroy' => 'Delete selected users',
-                'enable'  => 'Enable selected users',
-                'disable' => 'Disable selected users',
+                'destroy' => 'Delete selected',
+                'enable'  => 'Enable selected',
+                'disable' => 'Disable selected',
             ],
         ],
 
@@ -204,7 +203,7 @@ return [
             ],
 
             'actions' => [
-                'destroy' => 'Delete selected submissions',
+                'destroy' => 'Delete selected',
             ],
         ],
 
@@ -231,9 +230,9 @@ return [
             ],
 
             'actions' => [
-                'destroy' => 'Delete selected redirections',
-                'enable'  => 'Enable selected redirections',
-                'disable' => 'Disable selected redirections',
+                'destroy' => 'Delete selected',
+                'enable'  => 'Enable selected',
+                'disable' => 'Disable selected',
             ],
 
             'types' => [
@@ -256,10 +255,10 @@ return [
             ],
 
             'titles' => [
-                'main'        => 'Posts',
-                'index'       => 'Post list',
-                'create'      => 'Create post',
-                'edit'        => 'Edit post',
+                'main'        => 'Announcement',
+                'index'       => 'Announcement list',
+                'create'      => 'Create announcement',
+                'edit'        => 'Edit announcement',
                 'publication' => 'Publication options',
             ],
 
@@ -275,10 +274,10 @@ return [
             ],
 
             'actions' => [
-                'destroy' => 'Delete selected posts',
-                'publish' => 'Publish selected posts',
-                'pin'     => 'Pin selected posts',
-                'promote' => 'Promote selected posts',
+                'destroy' => 'Delete selected',
+                'publish' => 'Publish selected',
+                'pin'     => 'Pin selected',
+                'promote' => 'Promote selected',
             ],
         ],
     ],
@@ -288,7 +287,6 @@ return [
             'home'           => 'Home',
             'about'          => 'About',
             'contact'        => 'Contact',
-            // 'blog'           => 'Blog',
             'blog'           => 'Announcements',
             'message_sent'   => 'Message sent',
             'legal_mentions' => 'Legal mentions',
