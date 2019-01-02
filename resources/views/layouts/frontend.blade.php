@@ -12,8 +12,10 @@
 
     {!! SEOMeta::generate() !!}
 
-    @if (count(config('laravellocalization.supportedLocales')) > 1)
-    @include('partials.alternates')
+    @if (config("features.multi-language"))
+        @if (count(config('laravellocalization.supportedLocales')) > 1)
+        @include('partials.alternates')
+        @endif
     @endif
 
     <!-- Styles -->

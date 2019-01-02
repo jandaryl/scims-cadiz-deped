@@ -7,9 +7,7 @@
 @section('highlight')
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-3">Hello, world!</h1>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+            <p>Cadiz DepEd image with description.</p>
         </div>
     </div>
 @endsection
@@ -22,27 +20,18 @@
 
         <div class="card-body">
             <p>
-                Nulla quis lorem ut libero malesuada feugiat. Sed porttitor lectus nibh. Vivamus suscipit tortor
-                eget felis porttitor volutpat. Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget
-                felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                posuere
-                cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
-                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur non nulla sit amet
-                nisl
-                tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at
-                sem.
-                Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                Some brief history about the client.
             </p>
         </div>
     </div>
 
-    <b-card header="Vue Panel Component" class="mb-3" v-cloak>
-        <p>Hey ! I'm a Vue Panel component !</p>
+    <b-card header="Some History" class="mb-3" v-cloak>
+        <p>Some background history about this school.</p>
     </b-card>
 
     <div class="card mb-3">
         <div class="card-header">
-            This panel show original 4K images samples optimized by glide
+            This panel show other related images about the client.
         </div>
 
         <div class="card-body">

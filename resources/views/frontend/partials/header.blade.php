@@ -3,7 +3,7 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsMain" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="{{ route('home') }}">{{ config('app.name', 'Laravel') }}</a>
+        <a class="navbar-brand" href="{{ route('home') }}">{{ config('app.name', 'Cadiz DepEd') }}</a>
 
         <div class="collapse navbar-collapse" id="navbarsMain">
             <div class="navbar-nav mr-auto">
@@ -21,19 +21,22 @@
             </div>
 
             <div class="navbar-nav">
-                @if (count(config('laravellocalization.supportedLocales')) > 1)
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {{ __('labels.language') }}
-                        </a>
+                @if (config("features.multi-language"))
+                    @if (count(config('laravellocalization.supportedLocales')) > 1)
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ __('labels.language') }}
+                            </a>
 
-                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            @include('partials.locales')
+                            <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                @include('partials.locales')
+                            </div>
                         </div>
-                    </div>
+                    @endif
                 @endif
                 @guest
-                    <a class="nav-link" href="{{ route('login') }}">@lang('labels.user.login')</a>
+                    <!-- <a class="nav-link" href="{{ route('login') }}">@lang('labels.user.login')</a> -->
+                    <a class="nav-link" href="{{ route('admin.login') }}">@lang('labels.user.login')</a>
                     @if (config('account.can_register'))
                         <a class="nav-link" href="{{ route('register') }}">@lang('labels.user.register')</a>
                     @endif
@@ -44,7 +47,7 @@
                         </a>
 
                         <div class="dropdown-menu" aria-labelledby="dropdown02">
-                            <a class="dropdown-item" href="{{ route('user.home') }}">@lang('labels.user.space')</a>
+                            <!-- <a class="dropdown-item" href="{{ route('user.home') }}">@lang('labels.user.space')</a> -->
                             <a class="dropdown-item" href="{{ route('user.account') }}">@lang('labels.user.account')</a>
                             @can('access backend')
                                 <a class="dropdown-item" href="{{ route('admin.home') }}" data-turbolinks="false">@lang('labels.user.administration')</a>

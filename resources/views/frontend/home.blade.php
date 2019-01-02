@@ -16,7 +16,7 @@
             @lang('labels.frontend.titles.home')
         </div>
 
-        <div class="card-body">
+<!--         <div class="card-body">
             <p>
                 Nulla quis lorem ut libero malesuada feugiat. Sed porttitor lectus nibh. Vivamus suscipit tortor
                 eget felis porttitor volutpat. Nulla porttitor accumsan tincidunt. Vivamus suscipit tortor eget
@@ -29,10 +29,10 @@
                 sem.
                 Quisque velit nisi, pretium ut lacinia in, elementum id enim.
             </p>
-        </div>
+        </div> -->
     </div>
 
-    <div class="card mb-3">
+<!--     <div class="card mb-3">
         <div class="card-header">Font Awesome</div>
 
         <div class="card-body">
@@ -41,5 +41,5 @@
             <font-awesome-icon :icon="['fab', 'twitter']"></font-awesome-icon>
             <font-awesome-icon :icon="['fab', 'pinterest']"></font-awesome-icon>
         </div>
-    </div>
+    </div> -->
 @endsection
