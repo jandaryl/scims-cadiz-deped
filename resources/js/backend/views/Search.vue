@@ -8,7 +8,7 @@
         <span v-html="item.body"></span>
       </b-card>
     </template>
-    <b-card v-else> Aucun résultat </b-card>
+    <b-card v-else> Can't find the data... </b-card>
   </div>
 </template>
 
