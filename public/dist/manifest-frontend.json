@@ -1,8 +1,8 @@
 {
-  "frontend.css": "/dist/css/frontend.e7ad323a1d9700ec3418.css",
-  "frontend.js": "/dist/js/frontend.e7ad323a1d9700ec3418.js",
-  "frontend.css.map": "/dist/css/frontend.e7ad323a1d9700ec3418.css.map",
-  "frontend.js.map": "/dist/js/frontend.e7ad323a1d9700ec3418.js.map",
+  "frontend.css": "/dist/css/frontend.ba634d099ba219ba6d6d.css",
+  "frontend.js": "/dist/js/frontend.ba634d099ba219ba6d6d.js",
+  "frontend.css.map": "/dist/css/frontend.ba634d099ba219ba6d6d.css.map",
+  "frontend.js.map": "/dist/js/frontend.ba634d099ba219ba6d6d.js.map",
   "vendor-frontend.js": "/dist/js/vendor-frontend.26a524571dc05d089912.js",
   "vendor-frontend.js.map": "/dist/js/vendor-frontend.26a524571dc05d089912.js.map",
   "images/vendor-frontend/intl-tel-input/build/app.scss": "/dist/images/vendor-frontend/intl-tel-input/build/flags@2x.png?d429a5777afaf2fc349652e812e9bb11",
