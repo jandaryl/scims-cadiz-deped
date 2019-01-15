@@ -9,7 +9,7 @@
 
 > For Mariadb you can use this [laravel-mariadb package](https://packagist.org/packages/ybr-nx/laravel-mariadb).
 
-1. `composer create-project --prefer-dist --stability=dev adr1enbe4udou1n/laravel-boilerplate my-new-project`
+1. `git clone https://github.com/jandaryl/scims-cadiz-deped.git`
 2. Set database and environment variables from **.env.example**
 3. Set Web write permission if needed to `bootstrap/cache` and `storage` folders.
 4. Launch follow commands :
