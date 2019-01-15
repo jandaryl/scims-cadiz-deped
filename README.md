@@ -1,6 +1,6 @@
 # Laravel Vue Tabler Boilerplate
 
-> This is a Bootstrap 4 starter kit site with lite blogging feature, user account registration/management and full Vue Tabler Backend based on Laravel 5.7. 
+> This is a Bootstrap 4 starter kit site with lite blogging feature, user account registration/management and full Vue Tabler Backend based on Laravel 5.7.
 
 [![Build Status](https://drone.okami101.io/api/badges/adr1enbe4udou1n/laravel-boilerplate/status.svg)](https://drone.okami101.io/adr1enbe4udou1n/laravel-boilerplate)
 [![StyleCI](https://styleci.io/repos/75558440/shield?style=flat&branch=master)](https://styleci.io/repos/75558440)
@@ -139,7 +139,7 @@ docker exec -it boilerplate-php-fpm php /app/artisan migrate
 Or apply the migrations with demo data
 ```bash
 docker exec -it boilerplate-php-fpm php /app/artisan migrate --seed
-``` 
+```
 
 ## Mac and Linux production environment
 ```bash
@@ -219,9 +219,9 @@ Both frontend and backend have dedicated login pages.
 1. Install dependencies with `yarn`
 2. Launch `yarn dev` for compiling assets and start dev-server with HMR enabled (preferred way for fast admin building)
 
-> N1 : Use DEV_SERVER_PORT variable to configure local port of Webpack Dev Server,  
-> N2 : Use DEV_SERVER_URL to configure HTTP access to Webpack Dev Server from your host, especially useful if you work on homestead/docker),  
-> N3 : Use `yarn watch` if you prefer old school watcher,  
+> N1 : Use DEV_SERVER_PORT variable to configure local port of Webpack Dev Server,
+> N2 : Use DEV_SERVER_URL to configure HTTP access to Webpack Dev Server from your host, especially useful if you work on homestead/docker),
+> N3 : Use `yarn watch` if you prefer old school watcher,
 > N4 : If assets modified, don't forget to launch `yarn prod` before deploy on production environment.
 
 ### Permissions definitions
@@ -246,7 +246,7 @@ PHP-CS-Fixer & ESLint are used for strong style guidelines for both server and c
 
 PHP is pre-configured for official Laravel styling, just launch `./vendor/bin/php-cs-fixer fix` for global project auto-formatting.
 
-JS use [Prettier Standard Style](https://github.com/prettier/prettier/) & eslint-loader is used within webpack for dynamic code styling recommendations.  
+JS use [Prettier Standard Style](https://github.com/prettier/prettier/) & eslint-loader is used within webpack for dynamic code styling recommendations.
 Moreover, [Official ESLint plugin for Vue.js](https://github.com/vuejs/eslint-plugin-vue) is included for heavy consistent code through all components vue files.
 
 ## TODO
