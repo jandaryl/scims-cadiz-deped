@@ -814,7 +814,7 @@ export default {
         },
         "permissions": {
             "categories": {
-                "blog": "Announcements",
+                "blog": "Curriculars",
                 "form": "Forms",
                 "access": "Access",
                 "seo": "SEO"
@@ -1213,7 +1213,7 @@ export default {
             },
             "placeholders": {
                 "route": "Select a valid internal route",
-                "tags": "Select or create a tag"
+                "tags": "Select or create a category"
             },
             "cookieconsent": {
                 "message": "This website uses cookies to ensure you get the best experience on our website.",
@@ -1266,14 +1266,14 @@ export default {
                     "published_posts": "Published posts",
                     "active_users": "Active users",
                     "form_submissions": "Submissions",
-                    "last_posts": "Last announcements",
+                    "last_posts": "Last curriculars",
                     "last_published_posts": "Last publications",
-                    "last_pending_posts": "Last pending announcements",
-                    "last_new_posts": "Last new announcements",
-                    "all_posts": "All announcements"
+                    "last_pending_posts": "Last pending curriculars",
+                    "last_new_posts": "Last new curriculars",
+                    "all_posts": "All curriculars"
                 },
                 "new_menu": {
-                    "post": "New announcement",
+                    "post": "New curricular",
                     "form_setting": "New form setting",
                     "user": "New user",
                     "role": "New role",
@@ -1372,10 +1372,10 @@ export default {
                         "published": "Published"
                     },
                     "titles": {
-                        "main": "Announcement",
-                        "index": "Announcement list",
-                        "create": "Create announcement",
-                        "edit": "Edit announcement",
+                        "main": "Curricular",
+                        "index": "Curricular list",
+                        "create": "Create curricular",
+                        "edit": "Edit curricular",
                         "publication": "Publication options"
                     },
                     "descriptions": {
@@ -1400,7 +1400,7 @@ export default {
                     "home": "Home",
                     "about": "About",
                     "contact": "Contact",
-                    "blog": "Announcement",
+                    "blog": "Curriculars",
                     "message_sent": "Message sent",
                     "legal_mentions": "Legal mentions",
                     "administration": "Administration"
@@ -1415,7 +1415,7 @@ export default {
                 "blog": {
                     "published_at": "Published at {date}",
                     "published_at_with_owner_linkable": "Published at {date} by <a href=\"{link}\">{name}</a>",
-                    "tags": "Tags"
+                    "tags": "Categories"
                 }
             }
         },
@@ -1565,7 +1565,7 @@ export default {
                 "pinned": "Pinned",
                 "promoted": "Promoted",
                 "body": "Body",
-                "tags": "Tags",
+                "tags": "Categories",
                 "published_at": "Publish at",
                 "unpublished_at": "Unpublish at",
                 "metable_type": "Entity"

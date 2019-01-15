@@ -16,6 +16,14 @@
     </div>
 </div>
 
+ <!-- <div class="form-group row">
+        <label for="avatar" class="col-md-4 col-form-label">@lang('validation.attributes.avatar')</label>
+
+        <div class="col-md-8">
+             <input type="file" class="form-control" name="avatar" id="avatar">
+        </div>
+</div> -->
+
 <div class="form-group row">
     <div class="col-md-8 ml-auto">
         <button class="btn btn-primary">@lang('buttons.update')</button>

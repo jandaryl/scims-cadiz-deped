@@ -8,7 +8,7 @@
 
     <div class="row">
         <div class="col-md-6">
-            <iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=North%20Negros%20College%2C%20Cadiz%20City%2C%20Negros%20Occidental%20+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+            <iframe src="https://maps.google.com/maps?width=100%&amp;height=500&amp;hl=en&amp;q=DepEd%20Division%20of%20Cadiz%20City%2C%20Abelarde%20Street%2C%20Cadiz%2C%20Negros%20Occidental+(Division%20of%20Cadiz%20City)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed"
                     height="550" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="col-md-6">

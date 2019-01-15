@@ -24,9 +24,9 @@ Route::get(
 )->name('legal-mentions');
 
 if (config('blog.enabled')) {
-    Route::get('announcements', 'BlogController@index')->name('blog.index');
-    Route::get('announcements/{post}', 'BlogController@show')->name('blog.show');
-    Route::get('announcements/tags/{tag}', 'BlogController@tag')->name('blog.tag');
+    Route::get('curriculars', 'BlogController@index')->name('blog.index');
+    Route::get('curriculars/{post}', 'BlogController@show')->name('blog.show');
+    Route::get('curriculars/tags/{tag}', 'BlogController@tag')->name('blog.tag');
 
     Route::get(
         LaravelLocalization::transRoute('routes.redactors'),

@@ -71,7 +71,7 @@ return [
 
     'placeholders' => [
         'route' => 'Select a valid internal route',
-        'tags'  => 'Select or create a tag',
+        'tags'  => 'Select or create a category',
     ],
 
     'cookieconsent' => [
@@ -131,15 +131,15 @@ return [
             'published_posts'      => 'Published posts',
             'active_users'         => 'Active users',
             'form_submissions'     => 'Submissions',
-            'last_posts'           => 'Last announcements',
+            'last_posts'           => 'Last curriculars',
             'last_published_posts' => 'Last publications',
-            'last_pending_posts'   => 'Last pending announcements',
-            'last_new_posts'       => 'Last new announcements',
-            'all_posts'            => 'All announcements',
+            'last_pending_posts'   => 'Last pending curriculars',
+            'last_new_posts'       => 'Last new curriculars',
+            'all_posts'            => 'All curriculars',
         ],
 
         'new_menu' => [
-            'post'         => 'New announcement',
+            'post'         => 'New curricular',
             'form_setting' => 'New form setting',
             'user'         => 'New user',
             'role'         => 'New role',
@@ -255,10 +255,10 @@ return [
             ],
 
             'titles' => [
-                'main'        => 'Announcement',
-                'index'       => 'Announcement list',
-                'create'      => 'Create announcement',
-                'edit'        => 'Edit announcement',
+                'main'        => 'Curricular',
+                'index'       => 'Curricular list',
+                'create'      => 'Create curricular',
+                'edit'        => 'Edit curricular',
                 'publication' => 'Publication options',
             ],
 
@@ -287,7 +287,7 @@ return [
             'home'           => 'Home',
             'about'          => 'About',
             'contact'        => 'Contact',
-            'blog'           => 'Announcements',
+            'blog'           => 'Curriculars',
             'message_sent'   => 'Message sent',
             'legal_mentions' => 'Legal mentions',
             'administration' => 'Administration',
@@ -305,7 +305,7 @@ return [
         'blog' => [
             'published_at'                     => 'Published at :date',
             'published_at_with_owner_linkable' => 'Published at :date by <a href=":link">:name</a>',
-            'tags'                             => 'Tags',
+            'tags'                             => 'Categories',
         ],
     ],
 ];
