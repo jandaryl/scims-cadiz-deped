@@ -68,4 +68,4 @@ Moreover, [Official ESLint plugin for Vue.js](https://github.com/vuejs/eslint-pl
 
 ## License
 
-This project is open-sourced software licensed under the [MIT license](https://adr1enbe4udou1n.mit-license.org).
+This project is open-sourced software licensed under the [MIT license](https://github.com/jandaryl/scims-cadiz-deped/blob/master/LICENSE).
