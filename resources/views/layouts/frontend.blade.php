@@ -27,6 +27,12 @@
     <link rel="stylesheet" href="{{ $stylePath }}">
     @endif
 
+    <link rel="stylesheet" href="/css/tailwind.min.css">
+    <link rel="stylesheet" href="/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="/css/bulma-divider.min.css">
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+
     <!-- CDN -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.6/cookieconsent.min.css">
     <script defer src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.6/cookieconsent.min.js"></script>
@@ -82,7 +88,13 @@
 
         @include('frontend.partials.footer')
     </div>
-
+    <!-- Start Scripts -->
+    <script type="text/javascript" src="/js/bulma-carousel.min.js"></script>
+    <script type="text/javascript" src="/js/fontawesome.min.js"></script>
+    <script>
+      var carousels = bulmaCarousel.attach();
+    </script>
+    <!-- End Scripts -->
     @stack('scripts')
 </body>
 </html>
