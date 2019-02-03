@@ -24,7 +24,7 @@
 
     <!-- Styles -->
     @if ($stylePath = Html::asset('frontend', 'frontend.css'))
-    <link rel="stylesheet" href="{{ $stylePath }}">
+    <!-- <link rel="stylesheet" href="{{ $stylePath }}"> -->
     @endif
 
     <link rel="stylesheet" href="/css/tailwind.min.css">
