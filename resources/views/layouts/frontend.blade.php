@@ -57,13 +57,13 @@
 
     @if(Breadcrumbs::exists() && !request()->routeIs('home'))
         <section class="nav-breadcrumb">
-            <div class="container">
+            <div class="container pl-4">
                 {!! Breadcrumbs::render() !!}
             </div>
         </section>
     @endif
 
-    <div class="container is-fluid">
+    <div class="container">
         @yield('content')
     </div>
     <div class="mt-8">

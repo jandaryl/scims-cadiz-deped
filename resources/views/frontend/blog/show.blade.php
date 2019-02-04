@@ -22,10 +22,10 @@
     </div>
 
     <nav class="nav mt-8">
-        <span class="navbar-brand">@lang('labels.frontend.blog.tags')</span>
+        <span class="navbar-brand lg:text-lg md:text-lg sm:text-base text-base">@lang('labels.frontend.blog.tags')</span>
 
         @foreach($post->tags as $tag)
-        <a class="nav-link" href="{{ route('blog.tag', $tag->slug) }}">{{ $tag->name }}</a>
+        <a class="nav-link lg:text-base md:text-base sm:text-sm text-sm" href="{{ route('blog.tag', $tag->slug) }}">{{ $tag->name }}</a>
         @endforeach
     </nav>
 @endsection

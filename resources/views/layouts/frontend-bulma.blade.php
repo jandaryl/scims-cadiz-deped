@@ -36,7 +36,7 @@
 
     @if(Breadcrumbs::exists() && !request()->routeIs('home'))
         <section class="nav-breadcrumb">
-            <div class="container">
+            <div class="container pl-4">
                 {!! Breadcrumbs::render() !!}
             </div>
         </section>

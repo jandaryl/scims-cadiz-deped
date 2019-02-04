@@ -2,11 +2,11 @@
   <div class="columns">
     <div class="column">
       <div class="flex flex-col justify-center">
-        <a class="lg:ml-32 md:ml-24 lg:text-left md:text-left text-center sm:ml-0 py-1 lg:mt-32 md:mt-24 sm:mt-0 lg:text-xl md:text-lg text-sm text-grey-darkest hover:text-blue" href="#">Home</a>
-        <a class="lg:ml-32 md:ml-24 lg:text-left md:text-left text-center sm:ml-0 py-1 mt-12 lg:text-xl md:text-lg text-sm text-grey-darkest hover:text-blue -mt-1" href="#">Curriculars</a>
-        <a class="lg:ml-32 md:ml-24 lg:text-left md:text-left text-center sm:ml-0 py-1 mt-12 lg:text-xl md:text-lg text-sm text-grey-darkest hover:text-blue -mt-1" href="#">Schools</a>
-        <a class="lg:ml-32 md:ml-24 lg:text-left md:text-left text-center sm:ml-0 py-1 mt-12 lg:text-xl md:text-lg text-sm text-grey-darkest hover:text-blue -mt-1" href="#">Categories</a>
-        <a class="lg:ml-32 md:ml-24 lg:text-left md:text-left text-center sm:ml-0 py-1 mt-12 lg:text-xl md:text-lg text-sm text-grey-darkest hover:text-blue -mt-1" href="#">Contact Us</a>
+        <a class="lg:ml-32 md:ml-24 lg:text-left md:text-left text-center sm:ml-0 py-1 lg:mt-32 md:mt-24 sm:mt-0 lg:text-xl md:text-lg text-sm text-grey-darkest hover:text-blue" href="{{ route('home') }}">Home</a>
+        <a class="lg:ml-32 md:ml-24 lg:text-left md:text-left text-center sm:ml-0 py-1 mt-12 lg:text-xl md:text-lg text-sm text-grey-darkest hover:text-blue -mt-1" href="{{ route('blog.index') }}">Curriculars</a>
+        <a class="lg:ml-32 md:ml-24 lg:text-left md:text-left text-center sm:ml-0 py-1 mt-12 lg:text-xl md:text-lg text-sm text-grey-darkest hover:text-blue -mt-1" href="{{ route('schools') }}">Schools</a>
+        <a class="lg:ml-32 md:ml-24 lg:text-left md:text-left text-center sm:ml-0 py-1 mt-12 lg:text-xl md:text-lg text-sm text-grey-darkest hover:text-blue -mt-1" href="{{ route('categories') }}">Categories</a>
+        <a class="lg:ml-32 md:ml-24 lg:text-left md:text-left text-center sm:ml-0 py-1 mt-12 lg:text-xl md:text-lg text-sm text-grey-darkest hover:text-blue -mt-1" href="{{ route('contact') }}">Contact Us</a>
       </div>
     </div>
     <div class="column">
@@ -33,11 +33,11 @@
           Connect With Us:
         </p>
         <div class="inline-flex flex-row justify-center">
-          <a class="text-grey-darkest hover:text-blue rounded-full h-8 w-8 flex items-center justify-center mr-1" target="_blank" href="#">
+          <a class="text-grey-darkest hover:text-blue rounded-full h-8 w-8 flex items-center justify-center mr-1" target="_blank" href="https://www.facebook.com/deped.cadizcity">
             <i class="fab fa-facebook-f"></i></a>
-          <a class="text-grey-darkest hover:text-blue rounded-full h-8 w-8 flex items-center justify-center mr-1" target="_blank" href="#">
+          <a class="text-grey-darkest hover:text-blue rounded-full h-8 w-8 flex items-center justify-center mr-1" target="_blank" href="https://twitter.com/DepEd_PH">
             <i class="fab fa-twitter"></i></a>
-          <a class="text-grey-darkest hover:text-blue rounded-full h-8 w-8 flex items-center justify-center mr-1" target="_blank" href="#">
+          <a class="text-grey-darkest hover:text-blue rounded-full h-8 w-8 flex items-center justify-center mr-1" target="_blank" href="https://www.instagram.com/explore/tags/depedph/?hl=en">
             <i class="fab fa-instagram"></i></a>
         </div>
       </div>

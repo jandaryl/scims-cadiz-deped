@@ -22,13 +22,13 @@
     <div class="hero-foot">
       <nav class="tabs is-boxed is-fullwidth">
         <div class="container">
-          <ul class="lg:text-xl md:text-lg sm:text-base text-sm has-text-weight-semibold">
-            <li class="is-active"><a>Home</a></li>
-            <li><a>Curriculars</a></li>
-            <li><a>Schools</a></li>
-            <li><a>Categories</a></li>
-            <li><a>Contact Us</a></li>
-            <li><a>Login</a></li>
+          <ul class="lg:text-xl md:text-lg sm:text-base text-sm has-text-weight-semibold no-underline">
+            <li class="{{ active_class(if_route('home')) }}"><a href="{{ route('home') }}">Home</a></li>
+            <li class="{{ active_class(if_route('blog.index')) }}"><a href="{{ route('blog.index') }}">Curriculars</a></li>
+            <li class="{{ active_class(if_route('schools')) }}"><a href="{{ route('schools') }}"> Schools</a></li>
+            <li class="{{ active_class(if_route('categories'))}}"><a href="{{ route('categories') }}">Categories</a></li>
+            <li class="{{ active_class(if_route('contact'))}}"><a href="{{ route('contact') }}">Contact Us</a></li>
+            <li><a href="{{ route('admin.login') }}">Login</a></li>
           </ul>
         </div>
       </nav>
