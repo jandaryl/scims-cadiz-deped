@@ -38,6 +38,16 @@ class PagesController extends FrontendController
         return view('frontend.pages.about')->withFlashMessage('Hey ! I\'m a flash message !');
     }
 
+    public function schools()
+    {
+        return view('frontend.pages.schools');
+    }
+
+    public function categories()
+    {
+        return view('frontend.pages.categories');
+    }
+
     public function contact(Request $request)
     {
         if ($request->isMethod('POST')) {

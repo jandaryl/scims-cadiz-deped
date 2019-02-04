@@ -21,7 +21,7 @@
         {!! Purify::clean($post->body) !!}
     </div>
 
-    <nav class="nav">
+    <nav class="nav mt-8">
         <span class="navbar-brand">@lang('labels.frontend.blog.tags')</span>
 
         @foreach($post->tags as $tag)

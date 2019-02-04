@@ -14,6 +14,16 @@ Breadcrumbs::register('about', function (BreadcrumbsGenerator $breadcrumbs) {
     $breadcrumbs->push(trans('labels.frontend.titles.about'), route('about'));
 });
 
+Breadcrumbs::register('schools', function (BreadcrumbsGenerator $breadcrumbs) {
+    $breadcrumbs->parent('home');
+    $breadcrumbs->push(trans('labels.frontend.titles.schools'), route('schools'));
+});
+
+Breadcrumbs::register('categories', function (BreadcrumbsGenerator $breadcrumbs) {
+    $breadcrumbs->parent('home');
+    $breadcrumbs->push(trans('labels.frontend.titles.categories'), route('categories'));
+});
+
 Breadcrumbs::register('blog.index', function (BreadcrumbsGenerator $breadcrumbs) {
     $breadcrumbs->parent('home');
     $breadcrumbs->push(trans('labels.frontend.titles.blog'), route('blog.index'));
@@ -25,7 +35,7 @@ Breadcrumbs::register('blog.show', function (BreadcrumbsGenerator $breadcrumbs, 
 });
 
 Breadcrumbs::register('blog.tag', function (BreadcrumbsGenerator $breadcrumbs, Tag $tag) {
-    $breadcrumbs->parent('blog.index');
+    $breadcrumbs->parent('categories');
     $breadcrumbs->push($tag->name, route('blog.tag', $tag->slug));
 });
 

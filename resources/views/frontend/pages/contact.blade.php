@@ -1,6 +1,6 @@
 @extends('layouts.frontend')
 
-@section('title', __('labels.frontend.titles.contact'))
+@section('title', 'Contact Us')
 
 @section('body_class', 'page-contact')
 

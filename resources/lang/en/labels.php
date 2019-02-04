@@ -284,13 +284,15 @@ return [
 
     'frontend' => [
         'titles' => [
-            'home'           => 'Home',
-            'about'          => 'About',
-            'contact'        => 'Contact',
-            'blog'           => 'Curriculars',
-            'message_sent'   => 'Message sent',
-            'legal_mentions' => 'Legal mentions',
-            'administration' => 'Administration',
+            'home'               => 'Home',
+            'about'              => 'About',
+            'contact'            => 'Contact Us',
+            'blog'               => 'School Curriculars',
+            'message_sent'       => 'Message sent',
+            'legal_mentions'     => 'Legal mentions',
+            'administration'     => 'Administration',
+            'schools'            => 'List of Schools',
+            'categories'         => 'Categories',
         ],
 
         'submissions' => [

@@ -1,4 +1,4 @@
-<footer class="footer mt-12">
+<footer class="container is-fullhd bg-grey-lightest mt-12">
   <div class="columns">
     <div class="column">
       <div class="flex flex-col justify-center">
@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="column">
-      <div class="flex flex-col">
+      <div class="flex flex-col lg:mt-12 md:mt-12 sm:mt-6 mt-6">
         <p class="text-center lg:text-2xl md:text-lg text-base">
           Want to get the latest updates?
         </p>
@@ -43,7 +43,7 @@
       </div>
     </div>
   </div>
-  <div class="text-center lg:text-xl md:text-lg text-sm lg:mt-16 md:mt-12 sm:mt-6">
+  <div class="text-center lg:text-xl md:text-lg text-sm lg:mt-16 md:mt-12 sm:mt-6 mt-6 lg:mb-24 md:mb-24 sm:mb-12 mb-6">
     <p>Copyright &copy; 2019</p>
   </div>
 </footer>

@@ -1,6 +1,10 @@
 <?php
 
-Route::get('/', 'FrontendController@index')->name('home');
+Route::get('/', 'BlogController@home')->name('home');
+
+Route::get('/schools', 'PagesController@schools')->name('schools');
+
+Route::get('/categories', 'PagesController@categories')->name('categories');
 
 Route::get(
     LaravelLocalization::transRoute('routes.about'),

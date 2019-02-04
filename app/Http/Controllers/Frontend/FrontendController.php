@@ -35,11 +35,6 @@ class FrontendController extends Controller
         });
     }
 
-    public function index()
-    {
-        return view('frontend.home');
-    }
-
     /**
      * Push attributes in order to correctly localize slugs.
      *

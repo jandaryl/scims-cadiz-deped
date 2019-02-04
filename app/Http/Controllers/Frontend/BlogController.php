@@ -32,8 +32,13 @@ class BlogController extends FrontendController
     public function index()
     {
         return view('frontend.blog.index')->withPosts(
-            $this->posts->published()->paginate(9)
+            $this->posts->published()->paginate(12)
         );
+    }
+
+    public function home()
+    {
+        return view('frontend.home')->withPosts($this->posts->published()->paginate(4));
     }
 
     public function tag(Tag $tag)
@@ -57,7 +62,7 @@ class BlogController extends FrontendController
     public function show(Post $post, Request $request)
     {
         // If not published, only user with edit access can see it
-        if (! $post->published && ! Gate::check('update', $post)) {
+        if (!$post->published && !Gate::check('update', $post)) {
             abort(404);
         }
 
