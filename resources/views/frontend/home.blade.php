@@ -4,30 +4,27 @@
 
 @section('content')
     <div class="tile is-ancestor box">
-        <div class="tile is-parent is-7">
+        <div class="tile is-parent is-6">
           <div class="tile is-child box">
-            <h3>History</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur.</p>
+            <h3 class="text-center lg:pb-4 md:pb-4 sm:pb-2 pb-2 lg:text-xl md:text-xl sm:text-lg text-lg">History</h3>
+            <p class="p-2 lg:text-base md:text-base sm:text-sm text-sm">Education in the Philippines has undergone several stages of development from the pre-Spanish times to the present. In meeting the needs of the society, education serves as focus of emphases/priorities of the leadership at certain periods/epochs in our national struggle as a race.</p>
+            <p class="p-2 lg:text-base md:text-base sm:text-sm text-sm">As early as in pre-Magellanic times, education was informal, unstructured, and devoid of methods. Children were provided more vocational training and less academics (3 Rs) by their parents and in the houses of tribal tutors.</p>
+            <p class="p-2 lg:text-base md:text-base sm:text-sm text-sm">The pre-Spanish system of education underwent major changes during the Spanish colonization. The tribal tutors were replaced by the Spanish Missionaries. Education was religion-oriented. It was for the elite, especially in the early years of Spanish colonization. Access to education by the Filipinos was later liberalized through the enactment of the Educational Decree of 1863 which provided for the establishment of at least one primary school for boys and girls in each town under the responsibility of the municipal government; and the establishment of a normal school for male teachers under the supervision of the Jesuits. Primary instruction was free and the teaching of Spanish was compulsory. Education during that period was inadequate, suppressed, and controlled.</p>
           </div>
         </div>
-        <div class="tile is-parent is-vertical is-5">
+        <div class="tile is-parent is-vertical is-6">
           <div class="tile is-child box">
-            <h3>Vision</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h3 class="text-center lg:pb-4 md:pb-4 sm:pb-2 pb-2 lg:text-xl md:text-xl sm:text-lg text-base">Vision</h3>
+            <p class="lg:text-base md:text-base sm:text-sm text-sm">We dream of Filipinos who passionately love their country  and whose values and competencies  enable them to realize their full potential  and contribute meaningfully to building the nation.</p>
+            <p class="pt-4 lg:text-base md:text-base sm:text-sm text-sm">As a learner-centered public institution, the Department of Education  continuously improves itself to better serve its stakeholders.</p>
           </div>
           <div class="tile is-child box">
-            <h3>Mission</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h3 class="text-center lg:pb-4 md:pb-4 sm:pb-2 pb-2 lg:text-xl md:text-xl sm:text-lg text-base">Mission</h3>
+            <p class="lg:text-base md:text-base sm:text-sm text-sm">To protect and promote the right of every Filipino to quality, equitable, culture-based, and complete basic education where:</p>
+            <p class="lg:pl-8 md:pl-4 sm:pl-2 pl-2 lg:pt-2 md:pt-2 sm:pt-1 pt-1 text-left lg:text-base md:text-base sm:text-sm text-sm">Students learn in a child-friendly, gender-sensitive, safe, and motivating environment.</p>
+            <p class="lg:pl-8 md:pl-4 sm:pl-2 pl-2 lg:pt-2 md:pt-2 sm:pt-1 pt-1 text-left lg:text-base md:text-base sm:text-sm text-sm">Teachers facilitate learning and constantly nurture every learner.</p>
+            <p class="lg:pl-8 md:pl-4 sm:pl-2 pl-2 lg:pt-2 md:pt-2 sm:pt-1 pt-1 text-left lg:text-base md:text-base sm:text-sm text-sm">Administrators and staff, as stewards of the institution, ensure an enabling and supportive environment for effective learning to happen.</p>
+            <p class="lg:pl-8 md:pl-4 sm:pl-2 pl-2 lg:pt-2 md:pt-2 sm:pt-1 pt-1 text-left lg:text-base md:text-base sm:text-sm text-sm">Family, community, and other stakeholders are actively engaged and share responsibility for developing life-long learners.</p>
           </div>
         </div>
     </div>
@@ -42,6 +39,7 @@
                   @foreach($chunk as $post)
                       <div class="tile is-child">
                           <div class="flex flex-col items-center h-auto w-64 font-mono font-medium box mb-4 mr-4">
+
                           @if ($post->featured_image_url)
                             <img class="h-32 w-64 rounded-none mb-4" src="{{ $post->featured_image_url }}" alt="{{ $post->title }}">
                           @else
@@ -60,5 +58,4 @@
           @endforeach
       @endif
     </div>
-
 @endsection

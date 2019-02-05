@@ -4,7 +4,7 @@
       <div class="level">
         <div class="level-item">
             <figure class="image is-128x128 mr-6">
-              <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+              <img class="is-rounded" src="https://i.imgur.com/AHIuanj.png" alt="DepEd Logo">
             </figure>
             <h1 class="title has-text-left has-text-weight-semibold">
               <!-- <div class="lg:block hidden"></div> TODO: For the mobile responsiveness...-->
