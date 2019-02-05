@@ -1,17 +1,17 @@
 {{ Form::model($loggedInUser, ['route' => 'user.account.update', 'class' => 'form-horizontal', 'method' => 'PATCH']) }}
 
 <div class="form-group row">
-    <label for="name" class="col-md-4 col-form-label">@lang('validation.attributes.name')</label>
+    <label for="name" class="col-md-4 col-form-label lg:text-lg md:text-base sm:text-sm text-sm">@lang('validation.attributes.name')</label>
 
-    <div class="col-md-8">
+    <div class="col-md-8 lg:text-lg md:text-base sm:text-sm text-sm">
         {{ Form::bsText('name', null, ['required', 'placeholder' => __('validation.attributes.name')]) }}
     </div>
 </div>
 
-<div class="form-group row">
+<div class="form-group row lg:text-lg md:text-base sm:text-sm text-sm">
     <label for="email" class="col-md-4 col-form-label">@lang('validation.attributes.email')</label>
 
-    <div class="col-md-8">
+    <div class="col-md-8 lg:text-lg md:text-base sm:text-sm text-sm">
         {{ Form::bsEmail('email', null, ['required', 'placeholder' => __('validation.attributes.email')]) }}
     </div>
 </div>

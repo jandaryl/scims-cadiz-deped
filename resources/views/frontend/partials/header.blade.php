@@ -28,7 +28,11 @@
             <li class="{{ active_class(if_route('schools')) }}"><a href="{{ route('schools') }}"> Schools</a></li>
             <li class="{{ active_class(if_route('categories'))}}"><a href="{{ route('categories') }}">Categories</a></li>
             <li class="{{ active_class(if_route('contact'))}}"><a href="{{ route('contact') }}">Contact Us</a></li>
-            <li><a href="{{ route('admin.login') }}">Login</a></li>
+            @guest
+              <li><a href="{{ route('admin.login') }}">Login</a></li>
+            @else
+              <li><a href="{{ route('logout') }}">Logout</a></li>
+            @endif
           </ul>
         </div>
       </nav>

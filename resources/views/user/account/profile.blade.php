@@ -1,4 +1,4 @@
-<table class="table table-striped table-hover">
+<table class="table table-striped table-hover lg:text-lg md:text-base sm:text-sm text-sm">
     <tr>
         <th>@lang('labels.user.avatar')</th>
         <td><img src="{{ $loggedInUser->avatar }}"

@@ -3,7 +3,7 @@
 @section('title', __('labels.user.titles.account'))
 
 @section('content')
-    <div class="card">
+    <div class="card lg:text-lg md:text-base sm:text-sm text-sm">
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs" role="tablist">
                 <li class="nav-item">

@@ -4,7 +4,7 @@
     @csrf
     @method('DELETE')
 
-    <button class="btn btn-danger"
+    <button class="btn btn-danger lg:text-lg md:text-base sm:text-sm text-sm"
             data-toggle="confirm"
             data-trans-button-cancel="@lang('buttons.cancel')"
             data-trans-button-confirm="@lang('buttons.delete')"
