@@ -28,20 +28,20 @@
               </div>
               <div class="inline-flex flex-col">
                 <p class="text-lg ml-12 mb-4 mt-8">School Name</p>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="#">Agudo Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="#">Alimatoc Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="#">Cadiz East II Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="#">Dr. VF Gustilo Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="#">Hiyang-Hiyang Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="#">Martin A. Quiatchon, Sr. Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="#">Paniqui-on Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="#">Pedro E. Ramos Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="#">Pedro P. Pitogo Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="#">San Andres Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="#">Sewahon Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="#">SPED Training Center</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="#">Tiglawigan Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12 lg:mb-12" href="#">Villacin Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'agudo-elementary-school') }}">Agudo Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'alimatoc-elementary-school') }}">Alimatoc Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'cadiz-east-ii-elementary-school') }}">Cadiz East II Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'dr-vf-gustilo-elementary-school') }}">Dr. VF Gustilo Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'hiyang-hiyang-elementary-school') }}">Hiyang-Hiyang Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'martin-a-quiatchon-sr-elementary-school') }}">Martin A. Quiatchon, Sr. Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'paniqui-on-elementary-school') }}">Paniqui-on Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'pedro-e-ramos-elementary-school') }}">Pedro E. Ramos Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'pedro-p-pitogo-elementary-school') }}">Pedro P. Pitogo Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'san-andres-elementary-school') }}">San Andres Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'sewahon-elementary-school') }}">Sewahon Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'sped-training-center') }}">SPED Training Center</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'tiglawigan-elementary-school') }}">Tiglawigan Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12 lg:mb-12" href="{{ route('blog.tag', 'villacin-elementary-school') }}">Villacin Elementary School</a>
               </div>
             </div>
           </div>

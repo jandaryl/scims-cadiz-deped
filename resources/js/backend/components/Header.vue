@@ -4,16 +4,17 @@
     <a class="navbar-brand" :href="$app.homePath" target="_blank">
       <img
         class="navbar-brand-full"
-        src="../../../sass/vendor/tabler/brand/logo.png"
-        height="30"
-        alt="Laravel Admin"
+        src="https://i.imgur.com/AHIuanj.png"
+        height="50"
+        width="50"
+        alt="DepEd Admin"
       />
       <img
         class="navbar-brand-minimized"
-        src="../../../sass/vendor/tabler/brand/logo-symbol.png"
+        src="https://i.imgur.com/AHIuanj.png"
         width="30"
         height="30"
-        alt="Laravel Admin"
+        alt="DepEd Admin"
       />
     </a>
     <SidebarToggler class="d-md-down-none" display="lg"></SidebarToggler>

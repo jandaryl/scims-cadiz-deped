@@ -9,6 +9,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title')</title>
 
+    <!-- Logo -->
+    <link rel="icon" type="image/ico" href="https://i.imgur.com/AHIuanj.png">
+
     <!-- Styles -->
     @if ($stylePath = Html::asset('frontend', 'frontend.css'))
         <link rel="stylesheet" href="{{ $stylePath }}">

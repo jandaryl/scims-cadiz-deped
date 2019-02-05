@@ -10,6 +10,10 @@
 
     <title>Administration</title>
 
+    <!-- Logo -->
+    <link rel="icon" type="image/ico" href="https://i.imgur.com/AHIuanj.png">
+
+
     <!-- Styles -->
     @if ($stylePath = Html::asset('backend', 'backend.css'))
     <link rel="stylesheet" href="{{ $stylePath }}">

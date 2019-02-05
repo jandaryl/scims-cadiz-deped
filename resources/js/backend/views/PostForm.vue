@@ -29,23 +29,6 @@
             </b-form-group>
 
             <b-form-group
-              :label="$t('validation.attributes.summary')"
-              label-for="summary"
-              horizontal
-              :label-cols="2"
-              :feedback="feedback('summary')"
-            >
-              <b-form-textarea
-                id="summary"
-                name="summary"
-                :rows="5"
-                :placeholder="$t('validation.attributes.summary')"
-                v-model="model.summary"
-                :state="state('summary')"
-              ></b-form-textarea>
-            </b-form-group>
-
-            <b-form-group
               :label="$t('validation.attributes.body')"
               label-for="body"
               horizontal
