@@ -4,19 +4,13 @@
 
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
-@import "~bootstrap-vue/dist/bootstrap-vue.css";
 
 // Plugins
 @import "~sweetalert2/src/sweetalert2";
-@import "~slick-carousel/slick/slick";
-@import "~slick-carousel/slick/slick-theme";
 @import "~intl-tel-input/src/css/intlTelInput";
 
 // Components
 @import "../buttons";
-
-// Sections
-@import "footer";
 
 // Pages
 @import "blog";
@@ -33,12 +27,6 @@ body {
   a {
     color: white;
   }
-}
-*/
-
-/*
-.bg-dark {
-    background-color: #1a75ff !important;
 }
 */
 
