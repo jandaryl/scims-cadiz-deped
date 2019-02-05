@@ -31,6 +31,9 @@
             @guest
               <li><a href="{{ route('admin.login') }}">Login</a></li>
             @else
+              @can('access backend')
+                <li><a href="{{ route('admin.home') }}">Admin</a></li>
+              @endcan
               <li><a href="{{ route('logout') }}">Logout</a></li>
             @endif
           </ul>
