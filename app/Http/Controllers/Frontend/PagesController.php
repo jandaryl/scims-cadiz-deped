@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\Models\Tag;
 use Illuminate\Http\Request;
 use Arcanedev\NoCaptcha\Rules\CaptchaRule;
 use App\Repositories\Contracts\FormSettingRepository;
@@ -45,7 +46,9 @@ class PagesController extends FrontendController
 
     public function categories()
     {
-        return view('frontend.pages.categories');
+        $tags = Tag::all();
+
+        return view('frontend.pages.categories')->withTags($tags);
     }
 
     public function contact(Request $request)
