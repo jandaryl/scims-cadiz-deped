@@ -2,7 +2,7 @@
   <AppFooter>
     <strong>
       <span>Copyright &copy; {{ new Date().getFullYear() }}</span>
-      <a href="/" target="_blank">{{ name }}</a>
+      <a href="/" target="_blank">Division of Cadiz City</a>
     </strong>
     . {{ $t('labels.all_rights_reserved') }}
   </AppFooter>

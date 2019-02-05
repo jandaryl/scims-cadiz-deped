@@ -43,6 +43,15 @@ Breadcrumbs::register('blog.tag', function (BreadcrumbsGenerator $breadcrumbs, T
     $breadcrumbs->push($tag->name, route('blog.tag', $tag->slug));
 });
 
+Breadcrumbs::register('blog.school', function (BreadcrumbsGenerator $breadcrumbs, Tag $tag) {
+    if (strpos($tag->name, 'School') === false && strpos($tag->name, 'Training') === false) {
+        $breadcrumbs->parent('categories');
+    } else {
+        $breadcrumbs->parent('schools');
+    }
+    $breadcrumbs->push($tag->name, route('blog.tag', $tag->slug));
+});
+
 Breadcrumbs::register('blog.owner', function (BreadcrumbsGenerator $breadcrumbs, User $user) {
     $breadcrumbs->parent('blog.index');
     $breadcrumbs->push($user->name, route('blog.owner', $user->slug));
