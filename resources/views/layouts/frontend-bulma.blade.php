@@ -36,11 +36,14 @@
 <body>
     @include('frontend.scripts.gtmiframe')
     @include('frontend.partials.header')
-    @include('frontend.partials.carousel')
+
+    @if(request()->routeIs('home'))
+        @include('frontend.partials.carousel')
+    @endif
 
     @if(Breadcrumbs::exists() && !request()->routeIs('home'))
         <section class="nav-breadcrumb">
-            <div class="container pl-4">
+            <div class="container pl-4 pt-12">
                 {!! Breadcrumbs::render() !!}
             </div>
         </section>

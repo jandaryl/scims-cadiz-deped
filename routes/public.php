@@ -30,7 +30,8 @@ Route::get(
 if (config('blog.enabled')) {
     Route::get('curriculars', 'BlogController@index')->name('blog.index');
     Route::get('curriculars/{post}', 'BlogController@show')->name('blog.show');
-    Route::get('curriculars/categories/{tag}', 'BlogController@tag')->name('blog.tag');
+    Route::get('schools/{tag}', 'BlogController@tag')->name('blog.school');
+    Route::get('categories/{tag}', 'BlogController@tag')->name('blog.tag');
 
     Route::get(
         LaravelLocalization::transRoute('routes.redactors'),

@@ -287,12 +287,12 @@ return [
             'home'               => 'Home',
             'about'              => 'About',
             'contact'            => 'Contact Us',
-            'blog'               => 'School Curriculars',
+            'blog'               => 'List of Curriculars',
             'message_sent'       => 'Message sent',
             'legal_mentions'     => 'Legal mentions',
             'administration'     => 'Administration',
             'schools'            => 'List of Schools',
-            'categories'         => 'Categories',
+            'categories'         => 'List of Categories',
         ],
 
         'submissions' => [

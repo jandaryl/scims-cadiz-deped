@@ -35,7 +35,11 @@ Breadcrumbs::register('blog.show', function (BreadcrumbsGenerator $breadcrumbs, 
 });
 
 Breadcrumbs::register('blog.tag', function (BreadcrumbsGenerator $breadcrumbs, Tag $tag) {
-    $breadcrumbs->parent('categories');
+    if (strpos($tag->name, 'School') === false && strpos($tag->name, 'Training') === false) {
+        $breadcrumbs->parent('categories');
+    } else {
+        $breadcrumbs->parent('schools');
+    }
     $breadcrumbs->push($tag->name, route('blog.tag', $tag->slug));
 });
 

@@ -28,20 +28,20 @@
               </div>
               <div class="inline-flex flex-col">
                 <p class="text-lg ml-12 mb-4 mt-8">School Name</p>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'agudo-elementary-school') }}">Agudo Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'alimatoc-elementary-school') }}">Alimatoc Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'cadiz-east-ii-elementary-school') }}">Cadiz East II Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'dr-vf-gustilo-elementary-school') }}">Dr. VF Gustilo Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'hiyang-hiyang-elementary-school') }}">Hiyang-Hiyang Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'martin-a-quiatchon-sr-elementary-school') }}">Martin A. Quiatchon, Sr. Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'paniqui-on-elementary-school') }}">Paniqui-on Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'pedro-e-ramos-elementary-school') }}">Pedro E. Ramos Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'pedro-p-pitogo-elementary-school') }}">Pedro P. Pitogo Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'san-andres-elementary-school') }}">San Andres Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'sewahon-elementary-school') }}">Sewahon Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'sped-training-center') }}">SPED Training Center</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'tiglawigan-elementary-school') }}">Tiglawigan Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12 lg:mb-12" href="{{ route('blog.tag', 'villacin-elementary-school') }}">Villacin Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'agudo-elementary-school') }}">Agudo Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'alimatoc-elementary-school') }}">Alimatoc Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'cadiz-east-ii-elementary-school') }}">Cadiz East II Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'dr-vf-gustilo-elementary-school') }}">Dr. VF Gustilo Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'hiyang-hiyang-elementary-school') }}">Hiyang-Hiyang Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'martin-a-quiatchon-sr-elementary-school') }}">Martin A. Quiatchon, Sr. Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'paniqui-on-elementary-school') }}">Paniqui-on Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'pedro-e-ramos-elementary-school') }}">Pedro E. Ramos Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'pedro-p-pitogo-elementary-school') }}">Pedro P. Pitogo Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'san-andres-elementary-school') }}">San Andres Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'sewahon-elementary-school') }}">Sewahon Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'sped-training-center') }}">SPED Training Center</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'tiglawigan-elementary-school') }}">Tiglawigan Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12 lg:mb-12" href="{{ route('blog.school', 'villacin-elementary-school') }}">Villacin Elementary School</a>
               </div>
             </div>
           </div>
@@ -71,22 +71,22 @@
               </div>
               <div class="inline-flex flex-col">
                 <p class="text-lg ml-12 mb-4 mt-8">School Name</p>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'alingating-elementary-school') }}">Alingating Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'bayabas-elementary-school') }}">Bayabas Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'cabahug-elementary-school') }}">Cabahug Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'cadiz-east-i-elementary-school') }}">Cadiz East I Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'cotcot-elementary-school') }}">Cotcot Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'don-ricardo-jesena-elementary-school') }}">Don Ricardo Jesena Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'escolastica-elementary-school') }}">Escolastica Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'fm-cabras-elementary-school') }}">F.M. Cabras Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'floro-l-reboton-elementary-school') }}">Floro L. Reboton Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'igcamalig-elementary-school') }}">Igcamalig Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'mabini-elementary-school') }}">Mabini Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'manuel-j-escalante-elementary-school') }}">Manuel J. Escalante Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'sangay-elementary-school') }}">Sangay Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'tres-andanas-elementary-school') }}">Tres Andanas Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'v-patricio-elementary-school') }}">V. Patricio Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'yee-on-elementary-school') }}">Yee-on Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'alingating-elementary-school') }}">Alingating Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'bayabas-elementary-school') }}">Bayabas Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'cabahug-elementary-school') }}">Cabahug Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'cadiz-east-i-elementary-school') }}">Cadiz East I Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'cotcot-elementary-school') }}">Cotcot Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'don-ricardo-jesena-elementary-school') }}">Don Ricardo Jesena Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'escolastica-elementary-school') }}">Escolastica Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'fm-cabras-elementary-school') }}">F.M. Cabras Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'floro-l-reboton-elementary-school') }}">Floro L. Reboton Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'igcamalig-elementary-school') }}">Igcamalig Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'mabini-elementary-school') }}">Mabini Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'manuel-j-escalante-elementary-school') }}">Manuel J. Escalante Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'sangay-elementary-school') }}">Sangay Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'tres-andanas-elementary-school') }}">Tres Andanas Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'v-patricio-elementary-school') }}">V. Patricio Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'yee-on-elementary-school') }}">Yee-on Elementary School</a>
               </div>
             </div>
           </div>
@@ -110,16 +110,16 @@
               </div>
               <div class="inline-flex flex-col">
                 <p class="text-lg ml-12 mb-4 mt-8">School Name</p>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'andres-bonifacio-elementary-school') }}">Andres Bonifacio Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'balandra-elementary-school') }}">Balandra Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'cadiz-west-i-elementary-school') }}">Cadiz West I Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'daga-elementary-school') }}">Daga Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'don-luis-consing-elementary-school') }}">Don Luis Consing Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'luis-uy-chiat-elementary-school') }}">Luis Uy Chiat Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'egido-fernandez-elementary-school') }}">Egido-Fernandez Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'naga-angela-elementary-school') }}">Naga Angela Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'progreso-elementary-school') }}">Progreso Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'san-rafael-elementary-school') }}">San Rafael Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'andres-bonifacio-elementary-school') }}">Andres Bonifacio Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'balandra-elementary-school') }}">Balandra Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'cadiz-west-i-elementary-school') }}">Cadiz West I Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'daga-elementary-school') }}">Daga Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'don-luis-consing-elementary-school') }}">Don Luis Consing Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'luis-uy-chiat-elementary-school') }}">Luis Uy Chiat Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'egido-fernandez-elementary-school') }}">Egido-Fernandez Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'naga-angela-elementary-school') }}">Naga Angela Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'progreso-elementary-school') }}">Progreso Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'san-rafael-elementary-school') }}">San Rafael Elementary School</a>
               </div>
             </div>
           </div>
@@ -143,16 +143,16 @@
               </div>
               <div class="inline-flex flex-col">
                 <p class="text-lg ml-12 mb-4 mt-8">School Name</p>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'aluyan-elementary-school') }}">Aluyan Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'burgos-elementary-school') }}">Burgos Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'cadiz-viejo-elementary-school') }}">Cadiz Viejo Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'cadiz-west-ii-elementary-school') }}">Cadiz West II Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'caduhaan-elementary-school') }}">Caduhaan Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'gen-a-lacson-elementary-school') }}">Gen. A. Lacson Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'hon-pedro-villena-elementary-school') }}">Hon. Pedro Villena Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'mv-gamboa-elementary-school') }}">M.V. Gamboa Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'sombito-elementary-school') }}">Sombito Elementary School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'tagbanon-elementary-school') }}">Tagbanon Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'aluyan-elementary-school') }}">Aluyan Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'burgos-elementary-school') }}">Burgos Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'cadiz-viejo-elementary-school') }}">Cadiz Viejo Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'cadiz-west-ii-elementary-school') }}">Cadiz West II Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'caduhaan-elementary-school') }}">Caduhaan Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'gen-a-lacson-elementary-school') }}">Gen. A. Lacson Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'hon-pedro-villena-elementary-school') }}">Hon. Pedro Villena Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'mv-gamboa-elementary-school') }}">M.V. Gamboa Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'sombito-elementary-school') }}">Sombito Elementary School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'tagbanon-elementary-school') }}">Tagbanon Elementary School</a>
               </div>
             </div>
           </div>
@@ -187,24 +187,24 @@
               </div>
               <div class="inline-flex flex-col">
                 <p class="text-lg ml-12 mb-4 mt-8">School Name</p>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'cadiz-viejo-national-high-school') }}">Cadiz Viejo National High School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'burgos-national-high-school') }}">Burgos National High School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'caduha-an-national-high-school') }}">Caduha-an National High School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'cnhs-andres-bonifacio-extension-high-school') }}">CNHS - Andres Bonifacio Extension High School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'cnhs-luna-extension-high-school') }}">CNHS - Luna Extension High School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'cnhs-tagbanon-extension-high-school') }}">CNHS - Tagbanon Extension High School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'dr-vicente-f-gustilo-memorial-national-high-school') }}">Dr. Vicente F. Gustilo Memorial National High School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'banquerohan-national-high-school') }}">Banquerohan National High School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'dvfgmnhs-daga-extension-high-school') }}">DVFGMNHS - Daga Extension High School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'mabini-national-high-school') }}">Mabini National High School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'mnhs-alimatoc-extension-high-school') }}">MNHS - Alimatoc Extension High School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'sicaba-national-high-school') }}">Sicaba National High School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'sped-high-school') }}">SPED High School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'tiglawigan-national-high-school') }}">Tiglawigan National High School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'tnhs-magsaysay-extension-high-school') }}">TNHS - Magsaysay Extension High School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'villacin-national-high-school') }}">Villacin National High School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'jerusalem-national-high-school') }}">Jerusalem National High School</a>
-                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.tag', 'vnhs-sewahon-extension-high-school') }}">VNHS - Sewahon Extension High School </a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'cadiz-viejo-national-high-school') }}">Cadiz Viejo National High School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'burgos-national-high-school') }}">Burgos National High School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'caduha-an-national-high-school') }}">Caduha-an National High School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'cnhs-andres-bonifacio-extension-high-school') }}">CNHS - Andres Bonifacio Extension High School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'cnhs-luna-extension-high-school') }}">CNHS - Luna Extension High School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'cnhs-tagbanon-extension-high-school') }}">CNHS - Tagbanon Extension High School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'dr-vicente-f-gustilo-memorial-national-high-school') }}">Dr. Vicente F. Gustilo Memorial National High School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'banquerohan-national-high-school') }}">Banquerohan National High School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'dvfgmnhs-daga-extension-high-school') }}">DVFGMNHS - Daga Extension High School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'mabini-national-high-school') }}">Mabini National High School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'mnhs-alimatoc-extension-high-school') }}">MNHS - Alimatoc Extension High School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'sicaba-national-high-school') }}">Sicaba National High School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'sped-high-school') }}">SPED High School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'tiglawigan-national-high-school') }}">Tiglawigan National High School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'tnhs-magsaysay-extension-high-school') }}">TNHS - Magsaysay Extension High School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'villacin-national-high-school') }}">Villacin National High School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'jerusalem-national-high-school') }}">Jerusalem National High School</a>
+                <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'vnhs-sewahon-extension-high-school') }}">VNHS - Sewahon Extension High School </a>
               </div>
             </div>
           </div>

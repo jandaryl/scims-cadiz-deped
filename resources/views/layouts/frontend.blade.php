@@ -50,17 +50,19 @@
     @include('partials.logged-as')
     @include('frontend.partials.header')
 
+    @if(request()->routeIs('home'))
+        @include('frontend.partials.carousel')
+    @endif
+
     @hasSection('highlight')
         <section class="highlight">
             @yield('highlight')
         </section>
-    @else
-        @include('frontend.partials.carousel')
     @endif
 
     @if(Breadcrumbs::exists() && !request()->routeIs('home'))
         <section class="nav-breadcrumb">
-            <div class="container pl-4">
+            <div class="container pl-4 pt-12">
                 {!! Breadcrumbs::render() !!}
             </div>
         </section>

@@ -44,6 +44,6 @@
     </div>
   </div>
   <div class="text-center lg:text-xl md:text-lg text-sm lg:mt-16 md:mt-12 sm:mt-6">
-    <p>Copyright &copy; 2019</p>
+    <p>Copyright &copy; {{ date('Y') }}</p>
   </div>
 </footer>
