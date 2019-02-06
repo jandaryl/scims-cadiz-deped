@@ -11,7 +11,7 @@
                       <img class="h-32 w-64 rounded-none mb-4" src="{{ asset('/images/placeholder.png') }}" alt="{{ $post->title }}">
                     @endif
 
-                      <a class="text-left lg:text-xl md:text-xl sm:text-lg text-lg text-grey-darkest hover:underline" href="{{ route('blog.show', ['post' => $post->slug]) }}">{{ str_limit($post->title, 15) }}</a>
+                      <a class="text-left lg:text-lg md:text-base sm:text-sm text-sm text-grey-darkest hover:underline" href="{{ route('blog.show', ['post' => $post->slug]) }}">{{ str_limit($post->title, 30) }}</a>
                       <p class="text-left lg:text-sm md:text-sm sm:text-xs text-xs">
                           @include('frontend.blog.partials.publication-infos')
                       </p>

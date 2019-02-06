@@ -9,7 +9,7 @@
             @include('frontend.blog.partials.publication-infos')
         </p>
     </div>
-    <div class="wysiwyg-content">
+    <div class="wysiwyg-content lg:text-lg md:text-base sm:text-sm text-xs">
         {!! Purify::clean($post->body) !!}
     </div>
 
