@@ -54,12 +54,6 @@
         @include('frontend.partials.carousel')
     @endif
 
-    @hasSection('highlight')
-        <section class="highlight">
-            @yield('highlight')
-        </section>
-    @endif
-
     @if(Breadcrumbs::exists() && !request()->routeIs('home'))
         <section class="nav-breadcrumb">
             <div class="container pl-4 pt-12">
