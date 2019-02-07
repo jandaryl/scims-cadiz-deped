@@ -9,11 +9,6 @@ Breadcrumbs::register('home', function (BreadcrumbsGenerator $breadcrumbs) {
     $breadcrumbs->push(trans('labels.frontend.titles.home'), route('home'));
 });
 
-Breadcrumbs::register('about', function (BreadcrumbsGenerator $breadcrumbs) {
-    $breadcrumbs->parent('home');
-    $breadcrumbs->push(trans('labels.frontend.titles.about'), route('about'));
-});
-
 Breadcrumbs::register('schools', function (BreadcrumbsGenerator $breadcrumbs) {
     $breadcrumbs->parent('home');
     $breadcrumbs->push(trans('labels.frontend.titles.schools'), route('schools'));
@@ -65,11 +60,6 @@ Breadcrumbs::register('contact', function (BreadcrumbsGenerator $breadcrumbs) {
 Breadcrumbs::register('contact-sent', function (BreadcrumbsGenerator $breadcrumbs) {
     $breadcrumbs->parent('contact');
     $breadcrumbs->push(trans('labels.frontend.titles.message_sent'), route('contact-sent'));
-});
-
-Breadcrumbs::register('legal-mentions', function (BreadcrumbsGenerator $breadcrumbs) {
-    $breadcrumbs->parent('home');
-    $breadcrumbs->push(trans('labels.frontend.titles.legal_mentions'), route('legal-mentions'));
 });
 
 Breadcrumbs::register('user.account', function (BreadcrumbsGenerator $breadcrumbs) {

@@ -6,11 +6,6 @@ Route::get('/schools', 'PagesController@schools')->name('schools');
 
 Route::get('/categories', 'PagesController@categories')->name('categories');
 
-Route::get(
-    LaravelLocalization::transRoute('routes.about'),
-    'PagesController@about'
-)->name('about');
-
 Route::match(
     ['GET', 'POST'],
     LaravelLocalization::transRoute('routes.contact'),
@@ -21,11 +16,6 @@ Route::get(
     LaravelLocalization::transRoute('routes.contact-sent'),
     'PagesController@contactSent'
 )->name('contact-sent');
-
-Route::get(
-    LaravelLocalization::transRoute('routes.legal-mentions'),
-    'PagesController@legalMentions'
-)->name('legal-mentions');
 
 if (config('blog.enabled')) {
     Route::get('curriculars', 'BlogController@index')->name('blog.index');
