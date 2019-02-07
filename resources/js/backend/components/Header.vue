@@ -4,14 +4,14 @@
     <a class="navbar-brand" :href="$app.homePath" target="_blank">
       <img
         class="navbar-brand-full"
-        src="https://i.imgur.com/AHIuanj.png"
+        src="/images/AHIuanj.png"
         height="50"
         width="50"
         alt="DepEd Admin"
       />
       <img
         class="navbar-brand-minimized"
-        src="https://i.imgur.com/AHIuanj.png"
+        src="/images/AHIuanj.png"
         width="30"
         height="30"
         alt="DepEd Admin"

@@ -10,8 +10,7 @@
     <title>@yield('title')</title>
 
     <!-- Logo -->
-    <link rel="icon" type="image/ico" href="https://i.imgur.com/AHIuanj.png">
-
+    <link rel="icon" type="image/ico" href="/images/AHIuanj.png">
 
     <link rel="stylesheet" href="/css/tailwind.min.css">
     <link rel="stylesheet" href="/css/bulma.min.css">

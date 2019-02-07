@@ -11,8 +11,7 @@
     <title>Administration</title>
 
     <!-- Logo -->
-    <link rel="icon" type="image/ico" href="https://i.imgur.com/AHIuanj.png">
-
+    <link rel="icon" type="image/ico" href="/images/AHIuanj.png">
 
     <!-- Styles -->
     @if ($stylePath = Html::asset('backend', 'backend.css'))
