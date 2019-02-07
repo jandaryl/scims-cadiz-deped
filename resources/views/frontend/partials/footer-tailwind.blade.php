@@ -7,6 +7,14 @@
         <a class="lg:ml-32 md:ml-24 lg:text-left md:text-left text-center sm:ml-0 py-1 mt-12 lg:text-xl md:text-lg text-sm text-grey-darkest hover:text-blue -mt-1" href="{{ route('schools') }}">Schools</a>
         <a class="lg:ml-32 md:ml-24 lg:text-left md:text-left text-center sm:ml-0 py-1 mt-12 lg:text-xl md:text-lg text-sm text-grey-darkest hover:text-blue -mt-1" href="{{ route('categories') }}">Categories</a>
         <a class="lg:ml-32 md:ml-24 lg:text-left md:text-left text-center sm:ml-0 py-1 mt-12 lg:text-xl md:text-lg text-sm text-grey-darkest hover:text-blue -mt-1" href="{{ route('contact') }}">Contact Us</a>
+        @guest
+          <a class="lg:ml-32 md:ml-24 lg:text-left md:text-left text-center sm:ml-0 py-1 mt-12 lg:text-xl md:text-lg text-sm text-grey-darkest hover:text-blue -mt-1" href="{{ route('admin.login') }}">Login</a>
+        @else
+          @can('access backend')
+            <a class="lg:ml-32 md:ml-24 lg:text-left md:text-left text-center sm:ml-0 py-1 mt-12 lg:text-xl md:text-lg text-sm text-grey-darkest hover:text-blue -mt-1" href="{{ route('admin.home') }}">Admin</a>
+          @endcan
+            <a class="lg:ml-32 md:ml-24 lg:text-left md:text-left text-center sm:ml-0 py-1 mt-12 lg:text-xl md:text-lg text-sm text-grey-darkest hover:text-blue -mt-1" href="{{ route('logout') }}">Logout</a>
+        @endif
       </div>
     </div>
     <div class="column">

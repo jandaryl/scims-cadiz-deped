@@ -5,7 +5,7 @@
 @section('content')
     <div class="row">
         <div class="col-md-12 col-lg-6 mx-auto">
-            <div class="card">
+            <div class="card mt-12 mb-8 mr-8 ml-4">
                 <div class="card-header">@lang('labels.user.login')</div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
