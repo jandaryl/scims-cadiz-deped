@@ -1,5 +1,7 @@
 @extends('layouts.frontend')
 
+@section('title', $post->title)
+
 @section('body_class', 'page-post')
 
 @section('content')

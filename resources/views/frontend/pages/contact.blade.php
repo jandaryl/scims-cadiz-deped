@@ -68,5 +68,5 @@
 @endsection
 
 @push('scripts')
-    {!! Captcha::script() !!}
+    <!-- {!! Captcha::script() !!} -->
 @endpush

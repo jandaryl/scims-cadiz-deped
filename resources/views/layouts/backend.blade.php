@@ -19,8 +19,8 @@
     @endif
 
     <!-- CDN -->
-    <script defer src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script defer src="//cdn.ckeditor.com/ckeditor5/11.1.1/classic/ckeditor.js"></script>
+    <script defer src="/js/backend-popper.min.js"></script>
+    <script defer src="/js/ckeditor.js"></script>
 
     <!-- Scripts -->
     <script defer src="{{ Html::asset('backend', 'vendor-backend.js') }}"></script>

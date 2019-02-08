@@ -58,7 +58,7 @@ class PagesController extends FrontendController
                 'name'                 => 'required',
                 'email'                => 'required|email',
                 'message'              => 'required',
-                'g-recaptcha-response' => ['required', new CaptchaRule()],
+                // 'g-recaptcha-response' => ['required', new CaptchaRule()],
             ]);
 
             $this->formSubmissions->store('contact', $request->input());
@@ -71,7 +71,7 @@ class PagesController extends FrontendController
 
     public function contactSent()
     {
-        $message = null;
+        $message = '<h1 class="text-center lg:text-2xl md:text-xl sm:text-lg text-base pb-4">Message Successfully Sent!</h1>';
 
         if ($formSetting = $this->formSettings->find('contact')) {
             $message = $formSetting->html_message;
