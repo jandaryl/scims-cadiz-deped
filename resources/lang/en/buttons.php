@@ -16,6 +16,7 @@ return [
     'send'     => 'Send',
     'login-as' => 'Login as :name',
     'apply'    => 'Apply',
+    'reply'    => 'Reply',
 
     'users' => [
         'create' => 'Create user',

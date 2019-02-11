@@ -986,6 +986,7 @@ export default {
             "send": "Send",
             "login-as": "Login as {name}",
             "apply": "Apply",
+            "reply": "Reply",
             "users": {
                 "create": "Create user"
             },
@@ -1399,11 +1400,13 @@ export default {
                 "titles": {
                     "home": "Home",
                     "about": "About",
-                    "contact": "Contact",
-                    "blog": "Curriculars",
+                    "contact": "Contact Us",
+                    "blog": "List of Curriculars",
                     "message_sent": "Message sent",
                     "legal_mentions": "Legal mentions",
-                    "administration": "Administration"
+                    "administration": "Administration",
+                    "schools": "List of Schools",
+                    "categories": "List of Categories"
                 },
                 "submissions": {
                     "message_sent": "<p>Your message has been successfully sent</p>"
@@ -1425,7 +1428,7 @@ export default {
             "contact": "contact",
             "contact-sent": "contact-sent",
             "legal-mentions": "legal-mentions",
-            "redactors": "blog/redactors/{user}"
+            "redactors": "curriculars/users/{user}"
         },
         "validation": {
             "accepted": "The {attribute} must be accepted.",
@@ -1513,6 +1516,7 @@ export default {
                 "display_name": "Display name",
                 "username": "Pseudo",
                 "email": "Email",
+                "avatar": "Avatar (optional)",
                 "first_name": "Firstname",
                 "last_name": "Lastname",
                 "password": "Password",
