@@ -50,7 +50,7 @@ return [
         'enabled' => true,
 
         'attributes' => [
-            'prefix' => '/admin/logs',
+            'prefix' => '/admin/system',
 
             'middleware' => ['web', 'auth', 'can:view reports'],
         ],
