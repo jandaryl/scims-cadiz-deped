@@ -5,6 +5,7 @@ return [
         'blog'   => 'Curriculars',
         'form'   => 'Forms',
         'access' => 'Access',
+        'report' => 'Reports',
         'seo'    => 'SEO',
     ],
 
@@ -34,6 +35,11 @@ return [
         'roles' => [
             'display_name' => 'View roles',
             'description'  => 'Can view roles.',
+        ],
+
+        'reports' => [
+            'display_name' => 'View reports',
+            'description'  => 'Can view reports.',
         ],
 
         'metas' => [

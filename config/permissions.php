@@ -129,4 +129,10 @@ return [
         'description'  => 'permissions.delete.roles.description',
         'category'     => 'permissions.categories.access',
     ],
+
+    'view reports' => [
+        'display_name' => 'permissions.view.reports.display_name',
+        'description'  => 'permissions.view.reports.description',
+        'category'     => 'permissions.categories.report',
+    ],
 ];
