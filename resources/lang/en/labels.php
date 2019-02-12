@@ -151,6 +151,7 @@ return [
             'content' => 'Content management',
             'forms'   => 'Form management',
             'access'  => 'Access management',
+            'report'  => 'Report management',
             'seo'     => 'SEO settings',
         ],
 
