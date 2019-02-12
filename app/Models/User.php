@@ -128,12 +128,12 @@ class User extends Authenticatable
 
     public function getCanEditAttribute()
     {
-        return ! $this->is_super_admin || 1 === auth()->id();
+        return !$this->is_super_admin || 1 === auth()->id();
     }
 
     public function getCanDeleteAttribute()
     {
-        return ! $this->is_super_admin && $this->id !== auth()->id() && (
+        return !$this->is_super_admin && $this->id !== auth()->id() && (
             Gate::check('delete users')
         );
     }
@@ -141,7 +141,7 @@ class User extends Authenticatable
     public function getCanImpersonateAttribute()
     {
         if (Gate::check('impersonate users')) {
-            return ! $this->is_super_admin
+            return !$this->is_super_admin
                 && session()->get('admin_user_id') !== $this->id
                 && $this->id !== auth()->id();
         }
@@ -195,7 +195,7 @@ class User extends Authenticatable
 
         foreach ($this->roles as $role) {
             foreach ($role->permissions as $permission) {
-                if (! \in_array($permission, $permissions, true)) {
+                if (!\in_array($permission, $permissions, true)) {
                     $permissions[] = $permission;
                 }
             }
