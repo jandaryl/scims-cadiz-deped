@@ -183,6 +183,13 @@ return [
             ],
         ],
 
+        'reports' => [
+            'titles' => [
+                'activity'   => 'Activity',
+                'log'        => 'Log',
+            ],
+        ],
+
         'metas' => [
             'titles' => [
                 'main'   => 'Meta',

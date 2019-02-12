@@ -73,6 +73,27 @@ export default (app, i18n, newPostsCount, pendingPostsCount) => {
     },
     {
       title: true,
+      name: i18n.t('labels.backend.sidebar.report'),
+      access: app.user.can('view reports')
+    },
+    {
+      name: i18n.t('labels.backend.reports.titles.activity'),
+      url: '/users',
+      icon: 'fe fe-activity',
+      access: app.user.can('view reports')
+    },
+    {
+      name: i18n.t('labels.backend.reports.titles.log'),
+      url: '/users',
+      icon: 'fe fe-bug',
+      access: app.user.can('view reports')
+    },
+    {
+      divider: true,
+      access: true
+    },
+    {
+      title: true,
       name: i18n.t('labels.backend.sidebar.seo'),
       access: app.metas || app.redirection
     },
