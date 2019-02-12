@@ -89,7 +89,8 @@
             "php artisan route:cache",
             "php artisan config:cache",
             "php artisan migrate --force",
-            "php artisan db:seed --force"
+            "php artisan db:seed --force",
+            "php artisan scout:import App\\Models\\Post"
         ]
     },
     "config": {

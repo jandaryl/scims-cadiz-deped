@@ -50,9 +50,9 @@ return [
         'enabled' => true,
 
         'attributes' => [
-            'prefix' => 'log-viewer',
+            'prefix' => '/admin/logs',
 
-            'middleware' => ['web', 'auth', 'can:access backend'],
+            'middleware' => ['web', 'auth', 'can:view reports'],
         ],
     ],
 

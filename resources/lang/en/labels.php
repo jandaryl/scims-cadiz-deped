@@ -14,6 +14,7 @@ return [
     'yes'                 => 'Yes',
     'no'                  => 'No',
     'add_new'             => 'Add',
+    'report'              => 'Report',
     'export'              => 'Export',
     'more_info'           => 'More info',
     'author'              => 'Author',
