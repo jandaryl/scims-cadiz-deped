@@ -68,14 +68,14 @@ if (Request::is('activity/cleared')) {
                 <tr @if($drilldownStatus && $hoverable) class="clickable-row" data-href="{{$prependUrl . $activity->id}}" data-toggle="tooltip" title="{{trans('LaravelLogger::laravel-logger.tooltips.viewRecord')}}" @endif >
                     <td>
                         <small>
-                            {{ $activity->id }}
+                             <a class="text-black" href="{{$prependUrl . $activity->id}}">{{ $activity->id }}</a>
                         </small>
                     </td>
                     <td>
                         {{ $activity->timePassed }}
                     </td>
                     <td>
-                        <a href="{{$prependUrl . $activity->id}}" target="_blank">{{ $activity->description }}</a>
+                       {{ $activity->description }}
                     </td>
                     <td>
                         @php
@@ -98,8 +98,8 @@ if (Request::is('activity/cleared')) {
                             }
 
                         @endphp
-                        <span class="badge badge-{{$userTypeClass}}">
-                            {{$userLabel}}
+                        <span class="badge badge-{{$userTypeClass}} no-underline">
+                            <a class="text-white hover:text-grey-darker" href="{{$prependUrl . $activity->id}}">{{$userLabel}}</a>
                         </span>
                     </td>
                     <td>
@@ -245,8 +245,8 @@ if (Request::is('activity/cleared')) {
 
 @if(config('LaravelLogger.loggerPaginationEnabled'))
     <div class="text-center">
-        <div>
-            {!! $activities->render() !!}
+        <div class="flex justify-center">
+            {!! $activities->links('vendor.pagination.default') !!}
         </div>
         <p>
             {!! trans('LaravelLogger::laravel-logger.pagination.countText', ['firstItem' => $activities->firstItem(), 'lastItem' => $activities->lastItem(), 'total' => $activities->total(), 'perPage' => $activities->perPage()]) !!}
