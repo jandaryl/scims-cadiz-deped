@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="LogViewer">
     <meta name="author" content="ARCANEDEV">
-    <title>LogViewer</title>
+    <title>System Logs</title>
 
     <!-- Logo -->
     <link rel="icon" type="image/ico" href="/images/AHIuanj.png">
@@ -13,6 +13,7 @@
     {{-- Styles --}}
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/tailwind.min.css">
     <style>
         html {
             position: relative;
@@ -216,9 +217,15 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark p-0">
-        <a href="{{ route('log-viewer::dashboard') }}" class="navbar-brand mr-0">
-            <i class="fa fa-fw fa-book"></i> LogViewer
+    <nav class="navbar navbar-expand-md navbar-light p-0 shadow">
+        <a class="navbar-brand" href="{{ route('admin.home') }}">
+        <img
+        src="/images/AHIuanj.png"
+        width="40"
+        height="40"
+        alt="DepEd Admin"
+        />
+        <span class="pl-2">{{ config('app.name', 'Division of Cadiz City') }}</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -227,7 +234,7 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item {{ Route::is('log-viewer::dashboard') ? 'active' : '' }}">
                     <a href="{{ route('log-viewer::dashboard') }}" class="nav-link">
-                        <i class="fa fa-dashboard"></i> Dashboard
+                        <i class="fa fa-home"></i> Dashboard
                     </a>
                 </li>
                 <li class="nav-item {{ Route::is('log-viewer::logs.list') ? 'active' : '' }}">
@@ -239,7 +246,7 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid bg-grey-lightest">
         <main role="main" class="pt-3">
             @yield('content')
         </main>

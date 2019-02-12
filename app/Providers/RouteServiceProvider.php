@@ -45,19 +45,19 @@ class RouteServiceProvider extends ServiceProvider
             ->namespace($this->namespace)
             ->group(base_path('routes/web.php'));
 
-        Route::middleware(['web', 'metas', 'locale', 'localize'])
+        Route::middleware(['web', 'metas', 'locale', 'localize', 'activity'])
             ->prefix(LaravelLocalization::setLocale())
-            ->namespace($this->namespace.'\Frontend')
+            ->namespace($this->namespace . '\Frontend')
             ->group(base_path('routes/public.php'));
 
-        Route::middleware(['web', 'locale'])
+        Route::middleware(['web', 'locale', 'activity'])
             ->prefix(LaravelLocalization::setLocale())
             ->namespace($this->namespace)
             ->group(base_path('routes/auth.php'));
 
-        Route::middleware(['web', 'locale', 'auth', 'can:access backend'])
-            ->prefix(LaravelLocalization::setLocale().'/'.config('app.admin_path'))
-            ->namespace($this->namespace.'\Backend')
+        Route::middleware(['web', 'locale', 'auth', 'can:access backend', 'activity'])
+            ->prefix(LaravelLocalization::setLocale() . '/' . config('app.admin_path'))
+            ->namespace($this->namespace . '\Backend')
             ->as('admin.')
             ->group(base_path('routes/admin.php'));
     }
