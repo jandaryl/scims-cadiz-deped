@@ -1,6 +1,6 @@
 @extends('layouts.frontend')
 
-@section('body_class', 'login-page')
+@section('title', 'Login')
 
 @section('content')
     <div class="row">
