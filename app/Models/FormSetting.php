@@ -56,6 +56,8 @@ class FormSetting extends Model
 
     protected $appends = ['can_edit', 'can_delete'];
 
+    protected $table = 'settings';
+
     public function getCanEditAttribute()
     {
         return true;
@@ -75,6 +77,6 @@ class FormSetting extends Model
     {
         $message = explode("\r\n", $this->message);
 
-        return '<p>'.implode("</p>\r\n<p>", $message).'</p>'."\r\n";
+        return '<p>' . implode("</p>\r\n<p>", $message) . '</p>' . "\r\n";
     }
 }

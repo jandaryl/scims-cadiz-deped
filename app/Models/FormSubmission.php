@@ -28,6 +28,8 @@ class FormSubmission extends Model
 {
     protected $appends = ['can_edit', 'can_delete'];
 
+    protected $table = 'submissions';
+
     public function getCanEditAttribute()
     {
         return false;

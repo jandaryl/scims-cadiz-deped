@@ -11,7 +11,7 @@ class CreateFormSettingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('form_settings', function (Blueprint $table) {
+        Schema::create('settings', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->unique();
             $table->json('message')->nullable();
