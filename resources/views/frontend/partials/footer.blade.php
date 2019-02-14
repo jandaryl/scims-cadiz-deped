@@ -18,10 +18,16 @@
       </div>
     </div>
     <div class="column">
-      <div class="flex flex-col">
+      <div class="flex flex-col items-center">
         <p class="text-center lg:text-2xl md:text-lg text-base">
           Want to get the latest updates?
         </p>
+        <div class="inline-flex lg:h-12 md:h-16 h-10 w-auto bg-green-lightest border border-green-light text-green-dark px-3 md:py-1 py-3 rounded-lg relative mt-2" role="alert">
+          <span class="block md:inline lg:pt-2 pb-2 md:pt-1 sm:pt-0 lg:text-lg md:text-base text-sm">Email Submitted Successfully!</span>
+          <span class="px-2 py-1 lg:pt-2 pb-2 md:pt-1 pt-0">
+            <svg class="fill-current lg:h-6 lg:w-6 md:h-5 md:w-5 sm:h-4 sm:w-4 h-4 w-4 text-sm text-green" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg>
+          </span>
+        </div>
         <div class="inline-flex mt-4 justify-center">
           <div class="field">
             <p class="control has-icons-left mr-2">
