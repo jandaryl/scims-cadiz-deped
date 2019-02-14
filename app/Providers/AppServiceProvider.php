@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Mailchimp;
 use App\Models\Post;
 use App\Models\User;
 use Illuminate\Support\Facades\URL;
@@ -57,6 +58,10 @@ class AppServiceProvider extends ServiceProvider
         if ($this->app->environment('local', 'testing')) {
             $this->app->register(DuskServiceProvider::class);
         }
+
+        $this->app->singleton('Mailchimp', function ($app) {
+            return new Mailchimp(config('services.mailchimp.apikey'));
+        });
 
         $this->app->bind(
             UserRepository::class,

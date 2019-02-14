@@ -6,6 +6,8 @@ Route::get('/schools', 'PagesController@schools')->name('schools');
 
 Route::get('/categories', 'PagesController@categories')->name('categories');
 
+Route::post('/submit', ['as'=>'email.subscribe', 'uses'=>'EmailNotifyController@subscribe']);
+
 Route::match(
     ['GET', 'POST'],
     LaravelLocalization::transRoute('routes.contact'),
