@@ -817,6 +817,7 @@ export default {
                 "blog": "Curriculars",
                 "form": "Forms",
                 "access": "Access",
+                "report": "Reports",
                 "seo": "SEO"
             },
             "access": {
@@ -841,6 +842,10 @@ export default {
                 "roles": {
                     "display_name": "View roles",
                     "description": "Can view roles."
+                },
+                "reports": {
+                    "display_name": "View reports",
+                    "description": "Can view reports."
                 },
                 "metas": {
                     "display_name": "View metas",
@@ -1163,6 +1168,7 @@ export default {
             "yes": "Yes",
             "no": "No",
             "add_new": "Add",
+            "report": "Report",
             "export": "Export",
             "more_info": "More info",
             "author": "Author",
@@ -1285,6 +1291,7 @@ export default {
                     "content": "Content management",
                     "forms": "Form management",
                     "access": "Access management",
+                    "report": "Report management",
                     "seo": "SEO settings"
                 },
                 "titles": {
@@ -1309,6 +1316,12 @@ export default {
                         "index": "Role list",
                         "create": "Role creation",
                         "edit": "Role modification"
+                    }
+                },
+                "reports": {
+                    "titles": {
+                        "activity": "Activity",
+                        "log": "Log"
                     }
                 },
                 "metas": {

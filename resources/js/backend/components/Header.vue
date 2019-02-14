@@ -54,6 +54,33 @@
           </b-dropdown-item>
         </template>
       </HeaderDropdown>
+      <HeaderDropdown
+        right
+        class="px-3 d-none d-md-block"
+        v-if="this.$app.user.can('view reports')"
+      >
+        <template slot="header">
+          <i class="fe fe-bar-chart-2"></i>&nbsp;&nbsp;{{ $t('labels.report') }}
+        </template>
+        <template slot="dropdown">
+          <b-dropdown-item
+            :href="$app.route('activity')"
+            v-if="this.$app.user.can('view reports')"
+          >
+            <i class="fe fe-activity"></i>&nbsp;&nbsp;{{
+              $t('labels.backend.reports.titles.activity')
+            }}
+          </b-dropdown-item>
+          <b-dropdown-item
+            :href="$app.route('log-viewer::dashboard')"
+            v-if="this.$app.user.can('view reports')"
+          >
+            <i class="fe fe-file"></i>&nbsp;&nbsp;{{
+              $t('labels.backend.reports.titles.log')
+            }}
+          </b-dropdown-item>
+        </template>
+      </HeaderDropdown>
       <HeaderDropdown right class="px-3">
         <template slot="header">
           <img

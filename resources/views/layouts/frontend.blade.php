@@ -48,7 +48,9 @@
 <body class="@yield('body_class')">
     @include('frontend.scripts.gtmiframe')
     @include('partials.logged-as')
-    @include('frontend.partials.header')
+    <div class="-mt-16">
+        @include('frontend.partials.header')
+    </div>
 
     @if(request()->routeIs('home'))
         @include('frontend.partials.carousel')

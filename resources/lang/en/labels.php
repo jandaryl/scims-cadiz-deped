@@ -14,6 +14,7 @@ return [
     'yes'                 => 'Yes',
     'no'                  => 'No',
     'add_new'             => 'Add',
+    'report'              => 'Report',
     'export'              => 'Export',
     'more_info'           => 'More info',
     'author'              => 'Author',
@@ -151,6 +152,7 @@ return [
             'content' => 'Content management',
             'forms'   => 'Form management',
             'access'  => 'Access management',
+            'report'  => 'Report management',
             'seo'     => 'SEO settings',
         ],
 
@@ -179,6 +181,13 @@ return [
                 'index'  => 'Role list',
                 'create' => 'Role creation',
                 'edit'   => 'Role modification',
+            ],
+        ],
+
+        'reports' => [
+            'titles' => [
+                'activity'   => 'Activity',
+                'log'        => 'Log',
             ],
         ],
 
