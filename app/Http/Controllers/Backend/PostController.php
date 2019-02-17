@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Backend;
 
+use PDF;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use App\Utils\RequestSearchQuery;
@@ -236,6 +237,14 @@ class PostController extends BackendController
                 $this->authorize('edit posts');
 
                 $this->posts->batchPromote($ids);
+
+                return $this->redirectResponse($request, __('alerts.backend.posts.bulk_promoted'));
+                break;
+            case 'print':
+
+                $posts = Post::find($ids);
+                $pdf = PDF::loadView('pdf.posts', compact('posts'));
+                $pdf->download('posts.pdf');
 
                 return $this->redirectResponse($request, __('alerts.backend.posts.bulk_promoted'));
                 break;

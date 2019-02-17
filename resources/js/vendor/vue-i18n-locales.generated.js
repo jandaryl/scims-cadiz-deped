@@ -1425,7 +1425,8 @@ export default {
                         "destroy": "Delete selected",
                         "publish": "Publish selected",
                         "pin": "Pin selected",
-                        "promote": "Promote selected"
+                        "promote": "Promote selected",
+                        "print": "Print selected"
                     }
                 }
             },
