@@ -6,7 +6,7 @@
         <div class="sidebar-header">
           <i class="fe fe-user"></i>&nbsp;&nbsp;{{ $app.user.name }}
         </div>
-        <AppSearch></AppSearch>
+        <AppSearch v-if="this.$app.user.can('search all posts')"></AppSearch>
         <SidebarNav :nav-items="nav"></SidebarNav>
         <SidebarFooter></SidebarFooter>
         <SidebarMinimizer></SidebarMinimizer>

@@ -7,7 +7,7 @@
         <div class="tile is-ancestor">
           <div class="inline-flex flex-wrap md:ml-24 tile is-parent">
             @foreach($tags as $tag)
-              @if(strpos($tag->name, 'School') === false && strpos($tag->name, 'Training') === false)
+              @if(strpos($tag->name, 'School') === false && strpos($tag->name, 'Training') === false && strpos($tag->name, 'Private') === false)
                 <div class="tile is-child">
                   <div class="flex flex-col items-center h-auto w-auto font-mono font-medium box mb-4 mr-4 ml-4 text-center">
                     <a class="text-left lg:text-2xl md:text-xl sm:text-lg text-lg text-grey-darkest hover:underline" href="{{ route('blog.tag', $tag->slug) }}">{{ $tag->name }}</a>

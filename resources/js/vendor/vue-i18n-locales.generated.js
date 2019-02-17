@@ -845,7 +845,15 @@ export default {
                 },
                 "reports": {
                     "display_name": "View reports",
-                    "description": "Can view reports."
+                    "description": "Can view reports buttons.",
+                    "activity": {
+                        "display_name": "View user logs",
+                        "description": "Can view user logs."
+                    },
+                    "system": {
+                        "display_name": "View system logs",
+                        "description": "Can view system logs."
+                    }
                 },
                 "metas": {
                     "display_name": "View metas",
@@ -863,6 +871,12 @@ export default {
                     "posts": {
                         "display_name": "View own posts",
                         "description": "Can view own posts."
+                    }
+                },
+                "private": {
+                    "posts": {
+                        "display_name": "View private posts",
+                        "description": "Can view private posts."
                     }
                 }
             },
@@ -969,6 +983,12 @@ export default {
             "impersonate": {
                 "display_name": "Impersonate user",
                 "description": "Can take ownership of others user identities. Useful for tests."
+            },
+            "search": {
+                "posts": {
+                    "display_name": "Search all posts",
+                    "description": "Can search all posts."
+                }
             }
         },
         "pagination": {

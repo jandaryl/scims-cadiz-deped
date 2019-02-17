@@ -46,6 +46,12 @@ return [
         'category'     => 'permissions.categories.blog',
     ],
 
+    'view private posts' => [
+        'display_name' => 'permissions.view.private.posts.display_name',
+        'description'  => 'permissions.view.private.posts.description',
+        'category'     => 'permissions.categories.blog',
+    ],
+
     'edit own posts' => [
         'display_name' => 'permissions.edit.own.posts.display_name',
         'description'  => 'permissions.edit.own.posts.description',
@@ -61,6 +67,12 @@ return [
     'publish posts' => [
         'display_name' => 'permissions.publish.posts.display_name',
         'description'  => 'permissions.publish.posts.description',
+        'category'     => 'permissions.categories.blog',
+    ],
+
+    'search all posts' => [
+        'display_name' => 'permissions.search.posts.display_name',
+        'description'  => 'permissions.search.posts.description',
         'category'     => 'permissions.categories.blog',
     ],
 
@@ -133,6 +145,18 @@ return [
     'view reports' => [
         'display_name' => 'permissions.view.reports.display_name',
         'description'  => 'permissions.view.reports.description',
+        'category'     => 'permissions.categories.report',
+    ],
+
+    'view user logs' => [
+        'display_name' => 'permissions.view.reports.activity.display_name',
+        'description'  => 'permissions.view.reports.activity.description',
+        'category'     => 'permissions.categories.report',
+    ],
+
+    'view system logs' => [
+        'display_name' => 'permissions.view.reports.system.display_name',
+        'description'  => 'permissions.view.reports.system.description',
         'category'     => 'permissions.categories.report',
     ],
 ];

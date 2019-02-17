@@ -65,7 +65,7 @@
         <template slot="dropdown">
           <b-dropdown-item
             :href="$app.route('activity')"
-            v-if="this.$app.user.can('view reports')"
+            v-if="this.$app.user.can('view user logs')"
           >
             <i class="fe fe-activity"></i>&nbsp;&nbsp;{{
               $t('labels.backend.reports.titles.activity')
@@ -73,7 +73,7 @@
           </b-dropdown-item>
           <b-dropdown-item
             :href="$app.route('log-viewer::dashboard')"
-            v-if="this.$app.user.can('view reports')"
+            v-if="this.$app.user.can('view system logs')"
           >
             <i class="fe fe-file"></i>&nbsp;&nbsp;{{
               $t('labels.backend.reports.titles.log')
