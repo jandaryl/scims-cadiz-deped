@@ -57,6 +57,7 @@
         />
         <span class="pl-2">{{ config('app.name', 'Division of Cadiz City') }}</span>
         </a>
+        <a href="{{ route('export.pdf') }}">Export as PDF</a>
     </nav>
     <div class="container">
         @yield('content')

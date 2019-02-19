@@ -242,11 +242,13 @@ class PostController extends BackendController
                 break;
             case 'print':
 
-                $posts = Post::find($ids);
-                $pdf = PDF::loadView('pdf.posts', compact('posts'));
-                $pdf->download('posts.pdf');
+                // $posts = Post::find([1, 2, 3, 4]);
 
-                return $this->redirectResponse($request, __('alerts.backend.posts.bulk_promoted'));
+                // $pdf = PDF::loadView('frontend.pdf.posts', compact('posts'));
+                // return $pdf->download('posts.pdf');
+
+                // return redirect()->route('export.pdf');
+                // return $this->redirectResponse($request, __('alerts.backend.posts.bulk_promoted'));
                 break;
         }
 

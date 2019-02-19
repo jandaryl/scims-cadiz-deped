@@ -206,6 +206,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\ViewServiceProvider::class,
         App\Providers\PurifySetupProvider::class,
+        Barryvdh\DomPDF\ServiceProvider::class,
     ],
 
     /*
@@ -255,5 +256,6 @@ return [
         'View'         => Illuminate\Support\Facades\View::class,
         'Captcha'      => Arcanedev\NoCaptcha\Facades\NoCaptcha::class,
         'SEOMeta'      => App\Facades\SEOMeta::class,
+        'PDF'          => Barryvdh\DomPDF\Facade::class,
     ],
 ];

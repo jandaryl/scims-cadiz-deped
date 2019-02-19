@@ -1,17 +1,25 @@
 @extends('layouts.pdf')
 
-@section('title', $post->title)
 
 @section('body_class', 'page-post')
 
 @section('content')
-    @if(!empty($posts))
         @foreach($posts as $post)
-            <div class="m-2 shadow-md p-4">
+            <div class="m-4 shadow-md p-4">
                 <div class="text-center m-4">
                     <h1 class="lg:text-2xl md:text-2xl sm:text-lg text-base">{{ $post->title }}</h1>
                     <p class="lg:text-lg md:text-base sm:text-sm text-xs">
-                        @include('frontend.blog.partials.publication-infos')
+                        @if ((isset($hide_owner) && $hide_owner) || !config('blog.show_post_owner'))
+                            @lang('labels.frontend.blog.published_at', ['date' => $post->updated_at->formatLocalized('%A %d %B %Y')])
+                        @else
+                            {!!
+                                __('labels.frontend.blog.published_at_with_owner_linkable', [
+                                    'date' => $post->updated_at->formatLocalized('%A %d %B %Y'),
+                                    'name' => $post->owner,
+                                    'link' => route('blog.owner', 'test'),
+                                ])
+                            !!}
+                        @endif
                     </p>
                 </div>
                 <div class="wysiwyg-content lg:text-lg md:text-base sm:text-sm text-xs">
@@ -27,5 +35,4 @@
                 </nav>
             </div>
         @endforeach
-    @endif
 @endsection

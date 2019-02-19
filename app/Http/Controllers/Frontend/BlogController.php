@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use PDF;
 use App\Models\Tag;
 use App\Models\Post;
 use App\Models\User;
@@ -34,6 +35,23 @@ class BlogController extends FrontendController
         return view('frontend.blog.index')->withPosts(
             $this->posts->published()->paginate(12)
         );
+    }
+
+    public function pdf()
+    {
+        $posts = Post::published()->latest()->paginate(8);
+
+        return view('frontend.pdf.posts')->withPosts(
+            $posts
+        );
+    }
+
+    public function export_pdf()
+    {
+        $posts = Post::find([1]);
+
+        $pdf = PDF::loadView('frontend.pdf.posts', compact('posts'));
+        return $pdf->download('posts.pdf');
     }
 
     public function home()
