@@ -28,4 +28,5 @@ class UsersTableSeeder extends Seeder
             'locale'            => app()->getLocale(),
             'timezone'          => config('app.timezone'),
         ]);
+    }
 }
