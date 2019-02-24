@@ -1406,6 +1406,60 @@
             "time": "2017-06-01T20:29:30+00:00"
         },
         {
+            "name": "jeremykenedy/laravel-logger",
+            "version": "v2.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeremykenedy/laravel-logger.git",
+                "reference": "7e54957c6ca0ff1025f116fdae0ac5355d7f629f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeremykenedy/laravel-logger/zipball/7e54957c6ca0ff1025f116fdae0ac5355d7f629f",
+                "reference": "7e54957c6ca0ff1025f116fdae0ac5355d7f629f",
+                "shasum": ""
+            },
+            "require": {
+                "jaybizzle/laravel-crawler-detect": "1.*",
+                "php": ">=7.0.0"
+            },
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "jeremykenedy\\LaravelLogger\\LaravelLoggerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "jeremykenedy\\LaravelLogger\\": "src/"
+                },
+                "files": [
+                    "src/app/Logic/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jeremykenedy",
+                    "email": "jeremykenedy@gmail.com"
+                }
+            ],
+            "description": "Laravel Logger Package",
+            "keywords": [
+                "Laravel activity",
+                "Laravel activity log",
+                "Laravel activity logger",
+                "Laravel log",
+                "laravel logger"
+            ],
+            "time": "2018-10-02T05:40:26+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v5.7.21",
             "source": {
