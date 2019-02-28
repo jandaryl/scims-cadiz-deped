@@ -2,7 +2,8 @@
 /public/storage
 /storage/*.key
 /storage/*.index
-/vendor
+/vendor/*
+!/vendor/jeremykenedy
 /.idea
 /.vscode
 /.vagrant

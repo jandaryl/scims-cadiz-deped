@@ -39,11 +39,11 @@ return [
 
         'mysql' => [
             'driver'      => 'mysql',
-            'host'        => env('DB_HOST', 'cadiz-deped-demo.mysql.eu2.frbit.com'),
+            'host'        => env('DB_HOST', 'cadiz-deped.mysql.eu2.frbit.com'),
             'port'        => env('DB_PORT', '3306'),
-            'database'    => env('DB_DATABASE', 'cadiz-deped-demo'),
-            'username'    => env('DB_USERNAME', 'cadiz-deped-demo'),
-            'password'    => env('DB_PASSWORD', '8BHPm9ROZDawPYmKBbfnKaVH'),
+            'database'    => env('DB_DATABASE', 'cadiz-deped'),
+            'username'    => env('DB_USERNAME', 'cadiz-deped'),
+            'password'    => env('DB_PASSWORD', 'Vp-GEbZDIzLb.a-bd-Yoj+UH'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset'     => 'utf8mb4',
             'collation'   => 'utf8mb4_unicode_ci',
