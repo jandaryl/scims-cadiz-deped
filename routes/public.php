@@ -4,7 +4,7 @@ Route::get('/', 'BlogController@home')->name('home');
 
 Route::get('/pdf', 'BlogController@pdf')->name('pdf');
 
-Route::get('/export_pdf', 'BlogController@export_pdf')->name('export.pdf');
+Route::get('/export_pdf/{id}', 'BlogController@export_pdf')->name('export.pdf');
 
 Route::get('/schools', 'PagesController@schools')->name('schools');
 

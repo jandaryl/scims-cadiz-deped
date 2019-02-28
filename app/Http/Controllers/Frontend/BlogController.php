@@ -9,6 +9,7 @@ use App\Models\User;
 use App\Facades\SEOMeta;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\View;
 use App\Repositories\Contracts\PostRepository;
 
 class BlogController extends FrontendController
@@ -46,12 +47,16 @@ class BlogController extends FrontendController
         );
     }
 
-    public function export_pdf()
+    public function export_pdf($id)
     {
-        $posts = Post::find([1]);
+        $post = Post::find($id);
 
-        $pdf = PDF::loadView('frontend.pdf.posts', compact('posts'));
-        return $pdf->download('posts.pdf');
+        $pdf = PDF::loadHTML(
+            View::make('frontend.pdf.posts', compact('post'))->render()
+        );
+        $now = date('Y-m-d');
+        // return $pdf->download("{$post->slug}-{$now}.pdf");
+        return $pdf->stream("{$post->slug}-{$now}.pdf");
     }
 
     public function home()

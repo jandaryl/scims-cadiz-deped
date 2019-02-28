@@ -15,7 +15,10 @@
         {!! Purify::clean($post->body) !!}
     </div>
     <!-- <a href="{{ route('export.pdf', ['post' => $post->slug]) }}">Export as PDF</a> -->
-    <a href="{{ route('export.pdf') }}">Export as PDF</a>
+    <div class="container">
+
+    <a href="{{ route('export.pdf', $post->id) }}">Download as PDF</a>
+    </div>
     <nav class="nav mt-8">
         <span class="navbar-brand lg:text-lg md:text-lg sm:text-base text-base">@lang('labels.frontend.blog.tags')</span>
 

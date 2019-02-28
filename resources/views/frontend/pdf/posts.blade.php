@@ -1,10 +1,8 @@
 @extends('layouts.pdf')
 
-
 @section('body_class', 'page-post')
 
 @section('content')
-        @foreach($posts as $post)
             <div class="m-4 shadow-md p-4">
                 <div class="text-center m-4">
                     <h1 class="lg:text-2xl md:text-2xl sm:text-lg text-base">{{ $post->title }}</h1>
@@ -34,5 +32,4 @@
                     @endforeach
                 </nav>
             </div>
-        @endforeach
 @endsection
