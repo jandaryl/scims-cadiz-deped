@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 use App\Repositories\Contracts\TagRepository;
 use App\Repositories\Contracts\PostRepository;
 use App\Repositories\Contracts\UserRepository;
+use App\Repositories\Contracts\SchoolRepository;
 
 class FrontendController extends Controller
 {
@@ -32,6 +33,12 @@ class FrontendController extends Controller
             $users = app(UserRepository::class);
 
             return $users->findBySlug($value);
+        });
+
+        Route::bind('school', function ($value) {
+            $schools = app(SchoolRepository::class);
+
+            return $schools->findBySlug($value);
         });
     }
 

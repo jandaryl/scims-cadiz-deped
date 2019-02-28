@@ -17,6 +17,12 @@ return [
             'deleted' => 'Role deleted',
         ],
 
+        'schools' => [
+            'created' => 'School created',
+            'updated' => 'School updated',
+            'deleted' => 'School deleted',
+        ],
+
         'metas' => [
             'created'        => 'Meta created',
             'updated'        => 'Meta updated',

@@ -1071,6 +1071,11 @@ export default {
                     "updated": "Role updated",
                     "deleted": "Role deleted"
                 },
+                "schools": {
+                    "created": "School created",
+                    "updated": "School updated",
+                    "deleted": "School deleted"
+                },
                 "metas": {
                     "created": "Meta created",
                     "updated": "Meta updated",
@@ -1142,6 +1147,11 @@ export default {
                     "first_user_cannot_be_destroyed": "Super admin user cannot be deleted",
                     "first_user_cannot_be_impersonated": "Super admin user cannot be impersonated",
                     "cannot_set_superior_roles": "You cannot attribute roles superior to yours"
+                },
+                "schools": {
+                    "create": "Error on school creation",
+                    "update": "Error on school updating",
+                    "delete": "Error on school deletion"
                 },
                 "roles": {
                     "create": "Error on role creation",
@@ -1604,14 +1614,14 @@ export default {
                 "minute": "Minute",
                 "second": "Second",
                 "title": "Title",
-                "schoolName": "School Name",
-                "schoolID": "School ID",
+                "school_name": "School Name",
+                "school_id": "School ID",
                 "district": "District",
-                "principalName": "Principal Name",
-                "noOfStudents": "No. of Students",
-                "noOfTeachers": "No. of Teachers",
-                "noOfClassrooms": "No. of Classrooms",
-                "contactNo": "Contact No.",
+                "principal_name": "Principal Name",
+                "no_of_students": "No. of Students",
+                "no_of_teachers": "No. of Teachers",
+                "no_of_classrooms": "No. of Classrooms",
+                "contact_no": "Contact No.",
                 "schoolImage": "School Image",
                 "id": "ID",
                 "principal": "Principal",
