@@ -1032,6 +1032,10 @@ export default {
                 "create": "Create post",
                 "save_and_publish": "Save and publish",
                 "save_as_draft": "Save as draft"
+            },
+            "schools": {
+                "create": "Create School",
+                "save": "Save"
             }
         },
         "passwords": {
@@ -1301,6 +1305,7 @@ export default {
                 },
                 "new_menu": {
                     "post": "New curricular",
+                    "school": "New School",
                     "form_setting": "New form setting",
                     "user": "New user",
                     "role": "New role",
@@ -1427,6 +1432,20 @@ export default {
                         "pin": "Pin selected",
                         "promote": "Promote selected",
                         "print": "Print selected"
+                    }
+                },
+                "schools": {
+                    "titles": {
+                        "main": "School",
+                        "index": "School list",
+                        "create": "Create School",
+                        "edit": "Edit School"
+                    },
+                    "placeholders": {
+                        "image": "School Image..."
+                    },
+                    "actions": {
+                        "destroy": "Delete selected"
                     }
                 }
             },
@@ -1574,6 +1593,21 @@ export default {
                 "minute": "Minute",
                 "second": "Second",
                 "title": "Title",
+                "schoolName": "School Name",
+                "schoolID": "School ID",
+                "district": "District",
+                "principalName": "Principal Name",
+                "noOfStudents": "No. of Students",
+                "noOfTeachers": "No. of Teachers",
+                "noOfClassrooms": "No. of Classrooms",
+                "contactNo": "Contact No.",
+                "schoolImage": "School Image",
+                "id": "ID",
+                "principal": "Principal",
+                "students": "Students",
+                "teachers": "Teachers",
+                "classrooms": "Classrooms",
+                "contact": "Contact",
                 "content": "Content",
                 "description": "Description",
                 "summary": "Summary",

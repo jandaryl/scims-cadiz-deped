@@ -140,12 +140,13 @@ return [
         ],
 
         'new_menu' => [
-            'post'         => 'New curricular',
-            'form_setting' => 'New form setting',
-            'user'         => 'New user',
-            'role'         => 'New role',
-            'meta'         => 'New meta',
-            'redirection'  => 'New redirection',
+            'post'           => 'New curricular',
+            'school'         => 'New School',
+            'form_setting'   => 'New form setting',
+            'user'           => 'New user',
+            'role'           => 'New role',
+            'meta'           => 'New meta',
+            'redirection'    => 'New redirection',
         ],
 
         'sidebar' => [
@@ -288,6 +289,23 @@ return [
                 'pin'     => 'Pin selected',
                 'promote' => 'Promote selected',
                 'print'   => 'Print selected',
+            ],
+        ],
+
+        'schools' => [
+            'titles' => [
+                'main'        => 'School',
+                'index'       => 'School list',
+                'create'      => 'Create School',
+                'edit'        => 'Edit School',
+            ],
+
+            'placeholders' => [
+                'image'             => 'School Image...',
+            ],
+
+            'actions' => [
+                'destroy' => 'Delete selected',
             ],
         ],
     ],
