@@ -4,23 +4,25 @@
 
 @section('content')
       <div class="tile is-ancestor box">
-        <div class="tile is-parent is-7">
+        <div class="tile is-parent is-6">
           <div class="tile is-child box lg:h-64">
-            <img class="h-full w-full rounded-none mb-4" src="https://i.imgur.com/9ZrUcRr.jpg" alt="Gelato De Naction Product">
+            <img class="h-full w-full rounded-none" src="https://i.imgur.com/9ZrUcRr.jpg" alt="Gelato De Naction Product">
+            <p class="text-center lg:text-lg md:text-md text-sm">Address : Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit</p>
+
           </div>
         </div>
-        <div class="tile is-parent is-vertical is-5">
+        <div class="tile is-parent is-vertical is-6">
           <div class="tile is-child box">
-            <div class="flex flex-col text-left lg:text-md md:text-md text-sm">
-                <p>School Name : Lorem ipsum dolor sit</p>
-                <p>School ID : XXXXXXX</p>
-                <p>District : III</p>
-                <p>Principal Name : Lorem ipsum dolor sit</p>
-                <p>No. of Students : XXXX</p>
-                <p>No. of Teachers : XXXX</p>
-                <p>No. of Classrooms : XXXX</p>
-                <p>Address : Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit</p>
-                <p>Contact No. : XXXXXXXXX</p>
+            <div class="flex flex-col text-left lg:text-lg md:text-md text-sm">
+                <p class="">School Name : Lorem ipsum dolor sit</p>
+                <p class="pt-1">School ID : XXXXXXX</p>
+                <p class="pt-1">District : III</p>
+                <p class="pt-1">Principal Name : Lorem ipsum dolor sit</p>
+                <p class="pt-1">No. of Students : XXXX</p>
+                <p class="pt-1">No. of Teachers : XXXX</p>
+                <p class="pt-1">No. of Classrooms : XXXX</p>
+                <p class="pt-1">Telephone No. : XXXXXXXXX</p>
+                <p class="pt-1">Mobile No. : XXXXXXXXX</p>
             </div>
           </div>
         </div>
