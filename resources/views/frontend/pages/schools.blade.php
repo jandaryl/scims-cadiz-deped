@@ -38,7 +38,7 @@
                         @php
                             $slug_school = str_slug($school->school_name);
                         @endphp
-                        <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', $slug_school) }}">{{
+                        <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('school.info', $school->id) }}">{{
                             $school->school_name
                         }}</a>
                     @endif

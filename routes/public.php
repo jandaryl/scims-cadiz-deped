@@ -2,7 +2,7 @@
 
 Route::get('/', 'BlogController@home')->name('home');
 
-Route::get('/school-information', 'PagesController@schoolInfo')->name('school.info');
+Route::get('/school-info/{id}', 'BlogController@schoolInfo')->name('school.info');
 
 Route::get('/export_pdf/{id}', 'BlogController@export_pdf')->name('export.pdf');
 
