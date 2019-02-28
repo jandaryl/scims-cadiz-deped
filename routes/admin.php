@@ -71,6 +71,18 @@ Route::group(
 );
 
 Route::group(
+    ['middleware' => ['can:view schools']],
+    function () {
+        Route::get('schools/search', 'SchoolController@search')->name('schools.search');
+        Route::get('schools/{school}/show', 'SchoolController@show')->name('schools.show');
+
+        Route::resource('schools', 'SchoolController', [
+            'only' => ['store', 'update', 'destroy'],
+        ]);
+    }
+);
+
+Route::group(
     ['middleware' => ['can:view metas']],
     function () {
         Route::get('metas/search', 'MetaController@search')->name('metas.search');

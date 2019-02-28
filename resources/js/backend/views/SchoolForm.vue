@@ -12,36 +12,36 @@
               }}
             </h3>
             <b-form-group
-              :label="$t('validation.attributes.schoolName')"
-              label-for="schoolName"
+              :label="$t('validation.attributes.school_name')"
+              label-for="school_name"
               horizontal
               :label-cols="2"
-              :feedback="feedback('schoolName')"
+              :feedback="feedback('school_name')"
             >
               <b-form-input
-                id="schoolName"
-                name="schoolName"
+                id="school_name"
+                name="school_name"
                 required
-                :placeholder="$t('validation.attributes.schoolName')"
-                v-model="model.schoolName"
-                :state="state('schoolName')"
+                :placeholder="$t('validation.attributes.school_name')"
+                v-model="model.school_name"
+                :state="state('school_name')"
               ></b-form-input>
             </b-form-group>
 
             <b-form-group
-              :label="$t('validation.attributes.schoolID')"
-              label-for="schoolID"
+              :label="$t('validation.attributes.school_id')"
+              label-for="school_id"
               horizontal
               :label-cols="2"
-              :feedback="feedback('schoolID')"
+              :feedback="feedback('school_id')"
             >
               <b-form-input
-                id="schoolID"
-                name="schoolID"
+                id="school_id"
+                name="school_id"
                 required
-                :placeholder="$t('validation.attributes.schoolID')"
-                v-model="model.schoolID"
-                :state="state('schoolID')"
+                :placeholder="$t('validation.attributes.school_id')"
+                v-model="model.school_id"
+                :state="state('school_id')"
               ></b-form-input>
             </b-form-group>
 
@@ -63,70 +63,70 @@
             </b-form-group>
 
             <b-form-group
-              :label="$t('validation.attributes.principalName')"
-              label-for="principalName"
+              :label="$t('validation.attributes.principal_name')"
+              label-for="principal_name"
               horizontal
               :label-cols="2"
-              :feedback="feedback('principalName')"
+              :feedback="feedback('principal_name')"
             >
               <b-form-input
-                id="principalName"
-                name="principalName"
+                id="principal_name"
+                name="principal_name"
                 required
-                :placeholder="$t('validation.attributes.principalName')"
-                v-model="model.principalName"
-                :state="state('principalName')"
+                :placeholder="$t('validation.attributes.principal_name')"
+                v-model="model.principal_name"
+                :state="state('principal_name')"
               ></b-form-input>
             </b-form-group>
 
             <b-form-group
-              :label="$t('validation.attributes.noOfStudents')"
-              label-for="noOfStudents"
+              :label="$t('validation.attributes.no_of_students')"
+              label-for="no_of_students"
               horizontal
               :label-cols="2"
-              :feedback="feedback('noOfStudents')"
+              :feedback="feedback('no_of_students')"
             >
               <b-form-input
-                id="noOfStudents"
-                name="noOfStudents"
+                id="no_of_students"
+                name="no_of_students"
                 required
-                :placeholder="$t('validation.attributes.noOfStudents')"
-                v-model="model.noOfStudents"
-                :state="state('noOfStudents')"
+                :placeholder="$t('validation.attributes.no_of_students')"
+                v-model="model.no_of_students"
+                :state="state('no_of_students')"
               ></b-form-input>
             </b-form-group>
 
             <b-form-group
-              :label="$t('validation.attributes.noOfTeachers')"
-              label-for="noOfTeachers"
+              :label="$t('validation.attributes.no_of_teachers')"
+              label-for="no_of_teachers"
               horizontal
               :label-cols="2"
-              :feedback="feedback('noOfTeachers')"
+              :feedback="feedback('no_of_teachers')"
             >
               <b-form-input
-                id="noOfTeachers"
-                name="noOfTeachers"
+                id="no_of_teachers"
+                name="no_of_teachers"
                 required
-                :placeholder="$t('validation.attributes.noOfTeachers')"
-                v-model="model.noOfTeachers"
-                :state="state('noOfTeachers')"
+                :placeholder="$t('validation.attributes.no_of_teachers')"
+                v-model="model.no_of_teachers"
+                :state="state('no_of_teachers')"
               ></b-form-input>
             </b-form-group>
 
             <b-form-group
-              :label="$t('validation.attributes.noOfClassrooms')"
-              label-for="noOfClassrooms"
+              :label="$t('validation.attributes.no_of_classrooms')"
+              label-for="no_of_classrooms"
               horizontal
               :label-cols="2"
-              :feedback="feedback('noOfClassrooms')"
+              :feedback="feedback('no_of_classrooms')"
             >
               <b-form-input
-                id="noOfClassrooms"
-                name="noOfClassrooms"
+                id="no_of_classrooms"
+                name="no_of_classrooms"
                 required
-                :placeholder="$t('validation.attributes.noOfClassrooms')"
-                v-model="model.noOfClassrooms"
-                :state="state('noOfClassrooms')"
+                :placeholder="$t('validation.attributes.no_of_classrooms')"
+                v-model="model.no_of_classrooms"
+                :state="state('no_of_classrooms')"
               ></b-form-input>
             </b-form-group>
 
@@ -148,19 +148,19 @@
             </b-form-group>
 
             <b-form-group
-              :label="$t('validation.attributes.contactNo')"
-              label-for="contactNo"
+              :label="$t('validation.attributes.contact_no')"
+              label-for="contact_no"
               horizontal
               :label-cols="2"
-              :feedback="feedback('contactNo')"
+              :feedback="feedback('contact_no')"
             >
               <b-form-input
-                id="contactNo"
-                name="contactNo"
+                id="contact_no"
+                name="contact_no"
                 required
-                :placeholder="$t('validation.attributes.contactNo')"
-                v-model="model.contactNo"
-                :state="state('contactNo')"
+                :placeholder="$t('validation.attributes.contact_no')"
+                v-model="model.contact_no"
+                :state="state('contact_no')"
               ></b-form-input>
             </b-form-group>
 
@@ -251,15 +251,15 @@ export default {
       listPath: '/schools',
       tags: [],
       model: {
-        schoolName: null,
-        schoolID: null,
+        school_name: null,
+        school_id: null,
         district: null,
-        principalName: null,
-        noOfStudents: null,
-        noOfTeachers: null,
-        noOfClassrooms: null,
+        principal_name: null,
+        no_of_students: null,
+        no_of_teachers: null,
+        no_of_classrooms: null,
         address: null,
-        contactNo: null,
+        contact_no: null,
         featured_image: null,
         featured_image_url: null,
         has_featured_image: false

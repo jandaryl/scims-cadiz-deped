@@ -19,7 +19,9 @@ use App\Repositories\Contracts\MetaRepository;
 use App\Repositories\Contracts\PostRepository;
 use App\Repositories\Contracts\RoleRepository;
 use App\Repositories\Contracts\UserRepository;
+use App\Repositories\EloquentSchoolRepository;
 use App\Repositories\EloquentAccountRepository;
+use App\Repositories\Contracts\SchoolRepository;
 use App\Repositories\Contracts\AccountRepository;
 use App\Repositories\EloquentFormSettingRepository;
 use App\Repositories\EloquentRedirectionRepository;
@@ -106,6 +108,11 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(
             TagRepository::class,
             EloquentTagRepository::class
+        );
+
+        $this->app->bind(
+            SchoolRepository::class,
+            EloquentSchoolRepository::class
         );
     }
 }

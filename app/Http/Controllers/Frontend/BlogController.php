@@ -6,6 +6,7 @@ use PDF;
 use App\Models\Tag;
 use App\Models\Post;
 use App\Models\User;
+use App\Models\School;
 use App\Facades\SEOMeta;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
@@ -64,12 +65,15 @@ class BlogController extends FrontendController
         return view('frontend.home')->withPosts($this->posts->published()->paginate(4));
     }
 
-    // public function schoolPosts($tag)
-    // {
-    //     $this->setTranslatable($tag);
+    public function schoolInfo($id)
+    {
+        $school = School::find($id);
+        $tag_school = Tag::findOrCreate($school->school_name);
 
-    //     return view('frontend.home')->withPosts($this->posts->published()->paginate(4));
-    // }
+        return view('frontend.pages.school-information', compact('school'))->withTag($tag_school)->withPosts(
+            $this->posts->publishedByTag($tag_school)->paginate(8)
+        );
+    }
 
     public function tag(Tag $tag)
     {

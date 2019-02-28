@@ -16,6 +16,12 @@ return [
             'cannot_set_superior_roles'         => 'You cannot attribute roles superior to yours',
         ],
 
+        'schools' => [
+            'create' => 'Error on school creation',
+            'update' => 'Error on school updating',
+            'delete' => 'Error on school deletion',
+        ],
+
         'roles' => [
             'create' => 'Error on role creation',
             'update' => 'Error on role updating',
