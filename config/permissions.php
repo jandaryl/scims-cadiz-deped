@@ -46,12 +46,6 @@ return [
         'category'     => 'permissions.categories.blog',
     ],
 
-    'view private posts' => [
-        'display_name' => 'permissions.view.private.posts.display_name',
-        'description'  => 'permissions.view.private.posts.description',
-        'category'     => 'permissions.categories.blog',
-    ],
-
     'edit own posts' => [
         'display_name' => 'permissions.edit.own.posts.display_name',
         'description'  => 'permissions.edit.own.posts.description',
@@ -158,5 +152,29 @@ return [
         'display_name' => 'permissions.view.reports.system.display_name',
         'description'  => 'permissions.view.reports.system.description',
         'category'     => 'permissions.categories.report',
+    ],
+
+    'view schools' => [
+        'display_name' => 'permissions.view.schools.display_name',
+        'description'  => 'permissions.view.schools.description',
+        'category'     => 'permissions.categories.school',
+    ],
+
+    'create schools' => [
+        'display_name' => 'permissions.create.schools.display_name',
+        'description'  => 'permissions.create.schools.description',
+        'category'     => 'permissions.categories.school',
+    ],
+
+    'edit schools' => [
+        'display_name' => 'permissions.edit.schools.display_name',
+        'description'  => 'permissions.edit.schools.description',
+        'category'     => 'permissions.categories.school',
+    ],
+
+    'delete schools' => [
+        'display_name' => 'permissions.delete.schools.display_name',
+        'description'  => 'permissions.delete.schools.description',
+        'category'     => 'permissions.categories.school',
     ],
 ];

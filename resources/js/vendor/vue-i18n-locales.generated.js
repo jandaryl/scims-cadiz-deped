@@ -814,6 +814,7 @@ export default {
         },
         "permissions": {
             "categories": {
+                "school": "Schools",
                 "blog": "Curriculars",
                 "form": "Forms",
                 "access": "Access",
@@ -863,6 +864,10 @@ export default {
                     "display_name": "View redirections",
                     "description": "Can view redirections."
                 },
+                "schools": {
+                    "display_name": "View all schools",
+                    "description": "Can view all schools."
+                },
                 "posts": {
                     "display_name": "View all posts",
                     "description": "Can view all posts."
@@ -871,12 +876,6 @@ export default {
                     "posts": {
                         "display_name": "View own posts",
                         "description": "Can view own posts."
-                    }
-                },
-                "private": {
-                    "posts": {
-                        "display_name": "View private posts",
-                        "description": "Can view private posts."
                     }
                 }
             },
@@ -900,6 +899,10 @@ export default {
                 "redirections": {
                     "display_name": "Create redirections",
                     "description": "Can create redirections."
+                },
+                "schools": {
+                    "display_name": "Create schools",
+                    "description": "Can create all schools."
                 },
                 "posts": {
                     "display_name": "Create posts",
@@ -926,6 +929,10 @@ export default {
                 "redirections": {
                     "display_name": "Edit redirections",
                     "description": "Can edit redirections."
+                },
+                "schools": {
+                    "display_name": "Edit all schools",
+                    "description": "Can edit all schools."
                 },
                 "posts": {
                     "display_name": "Edit all posts",
@@ -962,6 +969,10 @@ export default {
                 "redirections": {
                     "display_name": "Delete redirections",
                     "description": "Can delete redirections."
+                },
+                "schools": {
+                    "display_name": "Delete all schools",
+                    "description": "Can delete all schools."
                 },
                 "posts": {
                     "display_name": "Delete all posts",
