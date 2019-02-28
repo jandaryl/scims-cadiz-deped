@@ -64,6 +64,13 @@ class BlogController extends FrontendController
         return view('frontend.home')->withPosts($this->posts->published()->paginate(4));
     }
 
+    // public function schoolPosts($tag)
+    // {
+    //     $this->setTranslatable($tag);
+
+    //     return view('frontend.home')->withPosts($this->posts->published()->paginate(4));
+    // }
+
     public function tag(Tag $tag)
     {
         $this->setTranslatable($tag);
