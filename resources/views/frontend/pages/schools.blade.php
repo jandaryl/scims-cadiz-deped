@@ -11,6 +11,11 @@
               <div class="inline-flex flex-col">
                 <p class="text-left lg:text-xl md:text-xl sm:text-lg text-lg">District I</p>
                 <p class="w-24 lg:text-lg md:text-lg sm:text-base text-base ml-16 mb-4 mt-1">School ID</p>
+                @foreach($schools as $school)
+                    @if($school->district === 'I' && strpos($school->school_name, 'High School') === false)
+                        <p class="lg:text-base md:text-base sm:text-sm text-sm ml-16">{{ $school->school_id }}</p>
+                    @endif
+                @endforeach
                 <p class="lg:text-base md:text-base sm:text-sm text-sm ml-16">117529</p>
                 <p class="lg:text-base md:text-base sm:text-sm text-sm ml-16">117530</p>
                 <p class="lg:text-base md:text-base sm:text-sm text-sm ml-16">117531</p>
@@ -28,6 +33,16 @@
               </div>
               <div class="inline-flex flex-col">
                 <p class="text-lg ml-12 mb-4 mt-8">School Name</p>
+                @foreach($schools as $school)
+                    @if($school->district === 'I' && strpos($school->school_name, 'High School') === false)
+                        @php
+                            $slug_school = str_slug($school->school_name);
+                        @endphp
+                        <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', $slug_school) }}">{{
+                            $school->school_name
+                        }}</a>
+                    @endif
+                @endforeach
                 <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'agudo-elementary-school') }}">Agudo Elementary School</a>
                 <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'alimatoc-elementary-school') }}">Alimatoc Elementary School</a>
                 <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'cadiz-east-ii-elementary-school') }}">Cadiz East II Elementary School</a>
@@ -51,6 +66,11 @@
             <div class="inline-flex flex-row">
               <div class="inline-flex flex-col">
                 <p class="text-left lg:text-xl md:text-xl sm:text-lg text-lg">District II</p>
+                @foreach($schools as $school)
+                    @if($school->district === 'II' && strpos($school->school_name, 'High School') === false)
+                        <p class="lg:text-base md:text-base sm:text-sm text-sm ml-16">{{ $school->school_id }}</p>
+                    @endif
+                @endforeach
                 <p class="w-24 lg:text-lg md:text-lg sm:text-base text-base ml-16 mb-4 mt-1">School ID</p>
                 <p class="lg:text-base md:text-base sm:text-sm text-sm ml-16">117543</p>
                 <p class="lg:text-base md:text-base sm:text-sm text-sm ml-16">117544</p>
@@ -71,6 +91,16 @@
               </div>
               <div class="inline-flex flex-col">
                 <p class="text-lg ml-12 mb-4 mt-8">School Name</p>
+                @foreach($schools as $school)
+                    @if($school->district === 'II' && strpos($school->school_name, 'High School') === false)
+                        @php
+                            $slug_school = str_slug($school->school_name);
+                        @endphp
+                        <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', $slug_school) }}">{{
+                            $school->school_name
+                        }}</a>
+                    @endif
+                @endforeach
                 <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'alingating-elementary-school') }}">Alingating Elementary School</a>
                 <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'bayabas-elementary-school') }}">Bayabas Elementary School</a>
                 <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'cabahug-elementary-school') }}">Cabahug Elementary School</a>
@@ -97,6 +127,11 @@
               <div class="inline-flex flex-col">
                 <p class="text-left lg:text-xl md:text-xl sm:text-lg text-lg">District III</p>
                 <p class="lg:text-lg md:text-lg sm:text-base text-base ml-16 mb-4 mt-1">School ID</p>
+                @foreach($schools as $school)
+                    @if($school->district === 'III' && strpos($school->school_name, 'High School') === false)
+                        <p class="lg:text-base md:text-base sm:text-sm text-sm ml-16">{{ $school->school_id }}</p>
+                    @endif
+                @endforeach
                 <p class="lg:text-base md:text-base sm:text-sm text-sm ml-16">117559</p>
                 <p class="lg:text-base md:text-base sm:text-sm text-sm ml-16">117560</p>
                 <p class="lg:text-base md:text-base sm:text-sm text-sm ml-16">117561</p>
@@ -110,6 +145,16 @@
               </div>
               <div class="inline-flex flex-col">
                 <p class="text-lg ml-12 mb-4 mt-8">School Name</p>
+                @foreach($schools as $school)
+                    @if($school->district === 'III' && strpos($school->school_name, 'High School') === false)
+                        @php
+                            $slug_school = str_slug($school->school_name);
+                        @endphp
+                        <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', $slug_school) }}">{{
+                            $school->school_name
+                        }}</a>
+                    @endif
+                @endforeach
                 <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'andres-bonifacio-elementary-school') }}">Andres Bonifacio Elementary School</a>
                 <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'balandra-elementary-school') }}">Balandra Elementary School</a>
                 <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'cadiz-west-i-elementary-school') }}">Cadiz West I Elementary School</a>
@@ -130,6 +175,11 @@
               <div class="inline-flex flex-col">
                 <p class="text-left lg:text-xl md:text-xl sm:text-lg text-lg">District IV</p>
                 <p class="lg:text-lg md:text-lg sm:text-base text-base ml-16 mb-4 mt-1">School ID</p>
+                @foreach($schools as $school)
+                    @if($school->district === 'IV' && strpos($school->school_name, 'High School') === false)
+                        <p class="lg:text-base md:text-base sm:text-sm text-sm ml-16">{{ $school->school_id }}</p>
+                    @endif
+                @endforeach
                 <p class="lg:text-base md:text-base sm:text-sm text-sm ml-16">117569</p>
                 <p class="lg:text-base md:text-base sm:text-sm text-sm ml-16">117570</p>
                 <p class="lg:text-base md:text-base sm:text-sm text-sm ml-16">117571</p>
@@ -143,6 +193,16 @@
               </div>
               <div class="inline-flex flex-col">
                 <p class="text-lg ml-12 mb-4 mt-8">School Name</p>
+                @foreach($schools as $school)
+                    @if($school->district === 'IV' && strpos($school->school_name, 'High School') === false)
+                        @php
+                            $slug_school = str_slug($school->school_name);
+                        @endphp
+                        <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', $slug_school) }}">{{
+                            $school->school_name
+                        }}</a>
+                    @endif
+                @endforeach
                 <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'aluyan-elementary-school') }}">Aluyan Elementary School</a>
                 <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'burgos-elementary-school') }}">Burgos Elementary School</a>
                 <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'cadiz-viejo-elementary-school') }}">Cadiz Viejo Elementary School</a>
@@ -166,6 +226,11 @@
               <div class="inline-flex flex-col">
                 <p class="text-left lg:text-xl md:text-xl sm:text-lg text-lg">District IV</p>
                 <p class="lg:text-lg md:text-lg sm:text-base text-base ml-16 mb-4 mt-1">School ID</p>
+                @foreach($schools as $school)
+                    @if($school->district === 'IV' && strpos($school->school_name, 'High School') === true)
+                        <p class="lg:text-base md:text-base sm:text-sm text-sm ml-16">{{ $school->school_id }}</p>
+                    @endif
+                @endforeach
                 <p class="lg:text-base md:text-base sm:text-sm text-sm ml-16">302726</p>
                 <p class="lg:text-base md:text-base sm:text-sm text-sm ml-16">311406</p>
                 <p class="lg:text-base md:text-base sm:text-sm text-sm ml-16">302728</p>
@@ -187,6 +252,16 @@
               </div>
               <div class="inline-flex flex-col">
                 <p class="text-lg ml-12 mb-4 mt-8">School Name</p>
+                @foreach($schools as $school)
+                    @if($school->district === 'IV' && strpos($school->school_name, 'High School') !== false)
+                        @php
+                            $slug_school = str_slug($school->school_name);
+                        @endphp
+                        <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', $slug_school) }}">{{
+                            $school->school_name
+                        }}</a>
+                    @endif
+                @endforeach
                 <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'cadiz-viejo-national-high-school') }}">Cadiz Viejo National High School</a>
                 <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'burgos-national-high-school') }}">Burgos National High School</a>
                 <a class="lg:text-base md:text-base sm:text-sm text-sm text-grey-darkest hover:underline ml-12" href="{{ route('blog.school', 'caduha-an-national-high-school') }}">Caduha-an National High School</a>

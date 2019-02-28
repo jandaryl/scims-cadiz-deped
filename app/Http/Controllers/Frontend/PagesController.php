@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Models\Tag;
+use App\Models\School;
 use Illuminate\Http\Request;
 use Arcanedev\NoCaptcha\Rules\CaptchaRule;
 use App\Repositories\Contracts\FormSettingRepository;
@@ -41,7 +42,8 @@ class PagesController extends FrontendController
 
     public function schools()
     {
-        return view('frontend.pages.schools');
+        $schools = School::all();
+        return view('frontend.pages.schools', compact('schools'));
     }
 
     public function schoolInfo()
