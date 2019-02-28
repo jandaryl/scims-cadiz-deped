@@ -44,4 +44,9 @@ return [
         'save_and_publish' => 'Save and publish',
         'save_as_draft'    => 'Save as draft',
     ],
+
+    'schools' => [
+        'create'           => 'Create School',
+        'save'             => 'Save',
+    ],
 ];

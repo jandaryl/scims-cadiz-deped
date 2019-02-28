@@ -13,6 +13,8 @@ import FormSettingForm from '../views/FormSettingForm'
 import FormSettingList from '../views/FormSettingList'
 import FormSubmissionShow from '../views/FormSubmissionShow'
 import FormSubmissionList from '../views/FormSubmissionList'
+import SchoolForm from '../views/SchoolForm'
+import SchoolList from '../views/SchoolList'
 import UserForm from '../views/UserForm'
 import UserList from '../views/UserList'
 import RoleForm from '../views/RoleForm'
@@ -55,6 +57,44 @@ export function createRouter(base, i18n) {
             meta: {
               label: i18n.t('labels.backend.titles.dashboard')
             }
+          },
+          {
+            path: 'schools',
+            component: {
+              render(c) {
+                return c('router-view')
+              }
+            },
+            meta: {
+              label: i18n.t('labels.backend.schools.titles.main')
+            },
+            children: [
+              {
+                path: '/',
+                name: 'schools',
+                component: SchoolList,
+                meta: {
+                  label: i18n.t('labels.backend.schools.titles.index')
+                }
+              },
+              {
+                path: 'create',
+                name: 'schools_create',
+                component: SchoolForm,
+                meta: {
+                  label: i18n.t('labels.backend.schools.titles.create')
+                }
+              },
+              {
+                path: ':id/edit',
+                name: 'schools_edit',
+                component: SchoolForm,
+                props: true,
+                meta: {
+                  label: i18n.t('labels.backend.schools.titles.edit')
+                }
+              }
+            ]
           },
           {
             path: 'posts',

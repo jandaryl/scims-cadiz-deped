@@ -29,10 +29,18 @@
         </template>
         <template slot="dropdown">
           <b-dropdown-item
+            to="/schools/create"
+            v-if="this.$app.user.can('create schools')"
+          >
+            <i class="fe fe-book"></i>&nbsp;&nbsp;{{
+              $t('labels.backend.new_menu.school')
+            }}
+          </b-dropdown-item>
+          <b-dropdown-item
             to="/posts/create"
             v-if="this.$app.user.can('create posts')"
           >
-            <i class="fe fe-book"></i>&nbsp;&nbsp;{{
+            <i class="fe fe-file"></i>&nbsp;&nbsp;{{
               $t('labels.backend.new_menu.post')
             }}
           </b-dropdown-item>

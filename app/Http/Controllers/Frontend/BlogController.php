@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use PDF;
 use App\Models\Tag;
 use App\Models\Post;
 use App\Models\User;
 use App\Facades\SEOMeta;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\View;
 use App\Repositories\Contracts\PostRepository;
 
 class BlogController extends FrontendController
@@ -36,10 +38,38 @@ class BlogController extends FrontendController
         );
     }
 
+    public function pdf()
+    {
+        $posts = Post::published()->latest()->paginate(8);
+
+        return view('frontend.pdf.posts')->withPosts(
+            $posts
+        );
+    }
+
+    public function export_pdf($id)
+    {
+        $post = Post::find($id);
+
+        $pdf = PDF::loadHTML(
+            View::make('frontend.pdf.posts', compact('post'))->render()
+        );
+        $now = date('Y-m-d');
+        // return $pdf->download("{$post->slug}-{$now}.pdf");
+        return $pdf->stream("{$post->slug}-{$now}.pdf");
+    }
+
     public function home()
     {
         return view('frontend.home')->withPosts($this->posts->published()->paginate(4));
     }
+
+    // public function schoolPosts($tag)
+    // {
+    //     $this->setTranslatable($tag);
+
+    //     return view('frontend.home')->withPosts($this->posts->published()->paginate(4));
+    // }
 
     public function tag(Tag $tag)
     {

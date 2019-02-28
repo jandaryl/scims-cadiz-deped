@@ -20,9 +20,15 @@ export default (app, i18n, newPostsCount, pendingPostsCount) => {
       access: app.blogEnabled && app.user.can('view own posts')
     },
     {
+      name: i18n.t('labels.backend.schools.titles.main'),
+      url: '/schools',
+      icon: 'fe fe-book',
+      access: app.user.can('view own schools')
+    },
+    {
       name: i18n.t('labels.backend.posts.titles.main'),
       url: '/posts',
-      icon: 'fe fe-book',
+      icon: 'fe fe-file',
       access: app.blogEnabled && app.user.can('view own posts')
     },
     {

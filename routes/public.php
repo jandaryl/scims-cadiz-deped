@@ -2,6 +2,10 @@
 
 Route::get('/', 'BlogController@home')->name('home');
 
+Route::get('/school-information', 'PagesController@schoolInfo')->name('school.info');
+
+Route::get('/export_pdf/{id}', 'BlogController@export_pdf')->name('export.pdf');
+
 Route::get('/schools', 'PagesController@schools')->name('schools');
 
 Route::get('/categories', 'PagesController@categories')->name('categories');

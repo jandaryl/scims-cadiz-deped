@@ -3,11 +3,11 @@
     <b-card>
       <template slot="header">
         <h3 class="card-title">
-          {{ $t('labels.backend.posts.titles.index') }}
+          {{ $t('labels.backend.schools.titles.index') }}
         </h3>
-        <div class="card-options" v-if="this.$app.user.can('create posts')">
-          <b-button to="/posts/create" variant="success" size="sm">
-            <i class="fe fe-plus-circle"></i> {{ $t('buttons.posts.create') }}
+        <div class="card-options" v-if="this.$app.user.can('create schools')">
+          <b-button to="/schools/create" variant="success" size="sm">
+            <i class="fe fe-plus-circle"></i> {{ $t('buttons.schools.create') }}
           </b-button>
         </div>
       </template>
@@ -71,18 +71,6 @@
             ></router-link>
             <span v-else v-text="row.value"></span>
           </template>
-          <template slot="status" slot-scope="row">
-            <b-badge :variant="row.item.state">{{
-              $t(row.item.status_label)
-            }}</b-badge>
-          </template>
-          <template slot="pinned" slot-scope="row">
-            <c-switch
-              v-if="row.item.can_edit"
-              :checked="row.value"
-              @change="onPinToggle(row.item.id)"
-            ></c-switch>
-          </template>
           <template slot="owner" slot-scope="row">
             <span v-if="row.item.owner">{{ row.item.owner.name }}</span>
             <span v-else>{{ $t('labels.anonymous') }}</span>
@@ -137,7 +125,7 @@
 import axios from 'axios'
 
 export default {
-  name: 'PostList',
+  name: 'SchoolList',
   data() {
     return {
       selected: [],
@@ -145,40 +133,54 @@ export default {
         { key: 'checkbox' },
         { key: 'image', label: this.$t('validation.attributes.image') },
         {
-          key: 'title',
-          label: this.$t('validation.attributes.title'),
+          key: 'name',
+          label: this.$t('validation.attributes.name'),
           sortable: true
         },
         {
-          key: 'status',
-          label: this.$t('validation.attributes.status'),
-          class: 'text-center'
-        },
-        {
-          key: 'pinned',
-          label: this.$t('validation.attributes.pinned'),
-          class: 'text-center'
-        },
-        { key: 'owner', label: this.$t('labels.author'), sortable: true },
-        {
-          key: 'posts.created_at',
-          label: this.$t('labels.created_at'),
-          class: 'text-center',
+          key: 'school_id',
+          label: this.$t('validation.attributes.id'),
           sortable: true
         },
         {
-          key: 'posts.updated_at',
-          label: this.$t('labels.updated_at'),
-          class: 'text-center',
+          key: 'district',
+          label: this.$t('validation.attributes.district'),
+          sortable: true
+        },
+        {
+          key: 'principal',
+          label: this.$t('validation.attributes.principal'),
+          sortable: true
+        },
+        {
+          key: 'students',
+          label: this.$t('validation.attributes.students'),
+          sortable: true
+        },
+        {
+          key: 'teachers',
+          label: this.$t('validation.attributes.teachers'),
+          sortable: true
+        },
+        {
+          key: 'classrooms',
+          label: this.$t('validation.attributes.classrooms'),
+          sortable: true
+        },
+        {
+          key: 'address',
+          label: this.$t('validation.attributes.address'),
+          sortable: true
+        },
+        {
+          key: 'contact',
+          label: this.$t('validation.attributes.contact'),
           sortable: true
         },
         { key: 'actions', label: this.$t('labels.actions'), class: 'nowrap' }
       ],
       actions: {
-        destroy: this.$t('labels.backend.posts.actions.destroy'),
-        publish: this.$t('labels.backend.posts.actions.publish'),
-        pin: this.$t('labels.backend.posts.actions.pin'),
-        print: this.$t('labels.backend.posts.actions.print')
+        destroy: this.$t('labels.backend.posts.actions.destroy')
       }
     }
   },
@@ -191,13 +193,6 @@ export default {
     },
     onDelete(id) {
       this.$refs.datasource.deleteRow({ post: id })
-    },
-    onPinToggle(id) {
-      axios
-        .post(this.$app.route('admin.posts.pinned', { post: id }))
-        .catch(error => {
-          this.$app.error(error)
-        })
     }
   }
 }

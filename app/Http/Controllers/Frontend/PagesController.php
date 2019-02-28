@@ -44,6 +44,11 @@ class PagesController extends FrontendController
         return view('frontend.pages.schools');
     }
 
+    public function schoolInfo()
+    {
+        return view('frontend.pages.school-information');
+    }
+
     public function categories()
     {
         $tags = Tag::all();
