@@ -147,7 +147,10 @@
     @endif
     <div class="flex justify-center">
         <button class="bg-blue hover:bg-blue-dark text-white text-sm font-bold py-2 px-4 h-10 w-auto rounded mb-4">
-                        <a class="text-white hover:text-white" href="#"><i class="fas fa-eye fa-1x mr-2"></i>View All</a>
+                        @php
+                          $slug_school = str_slug($school->school_name);
+                        @endphp
+                        <a class="text-white hover:text-white" href="{{ route('blog.school', $slug_school) }}"><i class="fas fa-eye fa-1x mr-2"></i>View All</a>
         </button>
     </div>
     <!-- End Latest Posts -->
