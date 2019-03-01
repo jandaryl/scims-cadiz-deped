@@ -43,7 +43,7 @@ class SchoolController extends BackendController
         $requestSearchQuery = new RequestSearchQuery($request, $query);
 
         return $requestSearchQuery->result([
-            'id',
+            'schools.id',
             'school_name',
             'school_id',
             'district',
