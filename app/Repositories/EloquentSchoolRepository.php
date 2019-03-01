@@ -4,6 +4,7 @@ namespace App\Repositories;
 
 use Exception;
 use App\Models\School;
+use Illuminate\Http\UploadedFile;
 use App\Exceptions\GeneralException;
 use App\Repositories\Contracts\SchoolRepository;
 
@@ -29,12 +30,12 @@ class EloquentSchoolRepository extends EloquentBaseRepository implements SchoolR
      *
      * @return \App\Models\School
      */
-    public function store(array $input)
+    public function store(array $input, UploadedFile $image = null)
     {
         /** @var School $school */
         $school = $this->make($input);
 
-        if (!$this->save($school, $input)) {
+        if (!$this->save($school, $input, $image)) {
             throw new GeneralException(__('exceptions.backend.schools.create'));
         }
 
@@ -50,11 +51,11 @@ class EloquentSchoolRepository extends EloquentBaseRepository implements SchoolR
      *
      * @return \App\Models\School
      */
-    public function update(School $school, array $input)
+    public function update(School $school, array $input, UploadedFile $image = null)
     {
         $school->fill($input);
 
-        if (!$this->save($school, $input)) {
+        if (!$this->save($school, $input, $image)) {
             throw new GeneralException(__('exceptions.backend.schools.update'));
         }
 
@@ -69,10 +70,24 @@ class EloquentSchoolRepository extends EloquentBaseRepository implements SchoolR
      *
      * @return bool
      */
-    private function save(School $school, array $input)
+    private function save(School $school, array $input, UploadedFile $image = null)
     {
         if (!$school->save($input)) {
             return false;
+        }
+
+        // Featured image
+        /** @var Media $currentFeaturedImage */
+        $currentFeaturedImage = $school->getMedia('featured image')->first();
+
+        // Delete current image if replaced or delete asking
+        if ($currentFeaturedImage && ($image || !$input['has_featured_image'])) {
+            $currentFeaturedImage->delete();
+        }
+
+        if ($image) {
+            $school->addMedia($image)
+                ->toMediaCollection('featured image');
         }
 
         return true;

@@ -6,8 +6,8 @@
       <div class="tile is-ancestor box">
         <div class="tile is-parent is-6">
           <div class="tile is-child box lg:h-64">
-            <img class="h-full w-full rounded-none" src="https://i.imgur.com/9ZrUcRr.jpg" alt="Gelato De Naction Product">
-            <p class="text-center lg:text-lg md:text-md text-sm">Address : Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor sit</p>
+            <img class="h-full w-full rounded-none" src="{{ $school->featured_image_url }}" alt="Gelato De Naction Product">
+            <p class="text-center lg:text-lg md:text-md text-sm">Address : {{ $school->address }}</p>
 
           </div>
         </div>
