@@ -108,7 +108,6 @@ export default {
     return {
       selected: [],
       fields: [
-        { key: 'checkbox' },
         { key: 'image', label: this.$t('validation.attributes.image') },
         {
           key: 'school_name',
@@ -156,10 +155,7 @@ export default {
           sortable: true
         },
         { key: 'actions', label: this.$t('labels.actions'), class: 'nowrap' }
-      ],
-      actions: {
-        destroy: this.$t('labels.backend.schools.actions.destroy')
-      }
+      ]
     }
   },
   methods: {

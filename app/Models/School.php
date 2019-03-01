@@ -6,11 +6,14 @@ use Illuminate\Support\Facades\Gate;
 use App\Models\Traits\TranslatableJson;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Translatable\HasTranslations;
+use Spatie\MediaLibrary\HasMedia\HasMedia;
+use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 
-class School extends Model
+class School extends Model implements HasMedia
 {
     use HasTranslations;
     use TranslatableJson;
+    use HasMediaTrait;
 
     /**
      * The attributes that are mass assignable.
@@ -29,7 +32,20 @@ class School extends Model
         'contact_no',
     ];
 
-    protected $appends = ['can_edit', 'can_delete'];
+    protected $appends = [
+        'can_edit',
+        'can_delete',
+        'has_featured_image',
+        'featured_image_url',
+    ];
+
+    protected $casts = [
+        'has_featured_image' => 'boolean',
+    ];
+
+    protected $with = [
+        'media',
+    ];
 
     public function getCanEditAttribute()
     {
@@ -39,5 +55,18 @@ class School extends Model
     public function getCanDeleteAttribute()
     {
         return Gate::check('delete schools');
+    }
+
+    public function getHasFeaturedImageAttribute()
+    {
+        /* @var Media $media */
+        return (bool) $this->getFirstMedia('featured image');
+    }
+
+    public function getFeaturedImageUrlAttribute()
+    {
+        if ($image = $this->getFirstMedia('featured image')) {
+            return $image->getUrl();
+        }
     }
 }
