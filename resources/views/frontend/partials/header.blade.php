@@ -1,5 +1,5 @@
-<header class="hero is-info mb-12"> <!-- Just temporary fix for school info. -->
-<!-- <header class="hero is-info mb-12"> -->
+<!-- <header class="hero is-info mb-12"> Just temporary fix for school info. -->
+<header class="hero is-info ">
   <div class="hero-head">
       <p class="lg:text-lg md:text-base sm:text-sm text-xs has-text-weight-semibold float-right m-2">Date &nbsp;: {{ date('Y-m-d') }}</p>
   </div>

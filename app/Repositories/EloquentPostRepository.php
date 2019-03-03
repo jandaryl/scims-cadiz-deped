@@ -142,7 +142,53 @@ class EloquentPostRepository extends EloquentBaseRepository implements PostRepos
             }
 
             // Tags
-            if (isset($input['tags'])) {
+
+            $tags = Tag::all();
+
+            $schools = $tags->filter(function ($tag) {
+                return preg_match("/\bSchool\b/i", $tag->name);
+            })
+            ->map(function ($tag) {
+                return $tag->name;
+            })->toArray();
+
+            $trainings = $tags->filter(function ($tag) {
+                return preg_match("/\bTraining\b/i", $tag->name);
+            })
+            ->map(function ($tag) {
+                return $tag->name;
+            })->toArray();
+
+            $elementary = $tags->filter(function ($tag) {
+                return preg_match("/\bElementary School\b/i", $tag->name);
+            })
+            ->map(function ($tag) {
+                return $tag->name;
+            })->toArray();
+
+            $high_schools = $tags->filter(function ($tag) {
+                return preg_match("/\bHigh School\b/i", $tag->name);
+            })
+            ->map(function ($tag) {
+                return $tag->name;
+            })->toArray();
+
+            if (in_array('All', $input['tags'])) {
+                $all = array_merge($schools, $trainings, $input['tags']);
+                $post->syncTags($all);
+            } elseif (in_array('All Schools', $input['tags'])) {
+                $all = array_merge($schools, $input['tags']);
+                $post->syncTags($all);
+            } elseif (in_array('All Trainings', $input['tags'])) {
+                $all = array_merge($trainings, $input['tags']);
+                $post->syncTags($all);
+            } elseif (in_array('All High Schools', $input['tags'])) {
+                $all = array_merge($high_schools, $input['tags']);
+                $post->syncTags($all);
+            } elseif (in_array('All Elementary Schools', $input['tags'])) {
+                $all = array_merge($elementary, $input['tags']);
+                $post->syncTags($all);
+            } elseif (isset($input['tags'])) {
                 $post->syncTags($input['tags']);
             }
 

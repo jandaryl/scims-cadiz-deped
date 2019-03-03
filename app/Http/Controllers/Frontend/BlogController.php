@@ -56,8 +56,8 @@ class BlogController extends FrontendController
             View::make('frontend.pdf.posts', compact('post'))->render()
         );
         $now = date('Y-m-d');
-        // return $pdf->download("{$post->slug}-{$now}.pdf");
-        return $pdf->stream("{$post->slug}-{$now}.pdf");
+        return $pdf->download("{$post->slug}-{$now}.pdf");
+        // return $pdf->stream("{$post->slug}-{$now}.pdf");
     }
 
     public function home()
@@ -77,6 +77,10 @@ class BlogController extends FrontendController
 
     public function tag(Tag $tag)
     {
+        if ($tag->name === 'Private' && !Gate::check('access backend')) {
+            abort(403);
+        }
+
         $this->setTranslatable($tag);
 
         return view('frontend.blog.tag')->withTag($tag)->withPosts(
