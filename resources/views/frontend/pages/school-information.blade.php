@@ -3,6 +3,7 @@
 @section('title', 'School Information')
 
 @section('content')
+    <div class="mt-12">
       <div class="tile is-ancestor box">
         <div class="tile is-parent is-6">
           <div class="tile is-child box lg:h-64">
@@ -26,6 +27,7 @@
           </div>
         </div>
       </div>
+    </div>
     <!-- Start Latest Posts -->
     <div class="pt-4 pb-2">
     <div class="is-divider" data-content="Latest Posts"></div>
