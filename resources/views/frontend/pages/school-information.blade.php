@@ -35,7 +35,7 @@
     <p class="lg:text-3xl md:text-2xl sm:text-xl text-lg text-grey-dark">No Publish Post Yet...</p>
     </div>
     @endif
-    <h1 class="lg:text-3xl md:text-2xl sm:text-xl text-lg mb-4">Annoucements</h1>
+    <h1 class="lg:text-3xl md:text-2xl sm:text-xl text-lg mb-4 ml-4">Annoucements</h1>
     @if(!empty($posts))
     <div class="flex flex-col lg:items-stretch md:items-stretch sm:items-center items-center">
       @foreach($posts->chunk(4) as $chunk)
@@ -65,17 +65,12 @@
         @endforeach
     </div>
     @endif
-<!--     <div class="flex justify-center">
-        <button class="bg-blue hover:bg-blue-dark text-white text-sm font-bold py-2 px-4 h-10 w-auto rounded mb-4">
-                        <a class="text-white hover:text-white" href="#"><i class="fas fa-eye fa-1x mr-2"></i>View All</a>
-        </button>
-    </div> --> <!-- If to more filterized viewing all... -->
     @if(empty($posts))
     <div class="flex justify-center">
     <p class="lg:text-3xl md:text-2xl sm:text-xl text-lg text-grey-dark">No Publish Post Yet...</p>
     </div>
     @endif
-    <h1 class="lg:text-3xl md:text-2xl sm:text-xl text-lg mb-4">Achievements</h1>
+    <h1 class="lg:text-3xl md:text-2xl sm:text-xl text-lg mb-4 ml-4">Achievements</h1>
     @if(!empty($posts))
     <div class="flex flex-col lg:items-stretch md:items-stretch sm:items-center items-center">
       @foreach($posts->chunk(4) as $chunk)
@@ -105,12 +100,7 @@
         @endforeach
     </div>
     @endif
-<!--     <div class="flex justify-center">
-        <button class="bg-blue hover:bg-blue-dark text-white text-sm font-bold py-2 px-4 h-10 w-auto rounded mb-4">
-                        <a class="text-white hover:text-white" href="#"><i class="fas fa-eye fa-1x mr-2"></i>View All</a>
-        </button>
-    </div> --> <!-- If to more filterized viewing all... -->
-    <h1 class="lg:text-3xl md:text-2xl sm:text-xl text-lg mb-4">Events</h1>
+    <h1 class="lg:text-3xl md:text-2xl sm:text-xl text-lg mb-4 ml-4">Events</h1>
     @if(!empty($posts))
     @if(empty($posts))
     <div class="flex justify-center">
