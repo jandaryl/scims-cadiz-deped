@@ -20,7 +20,7 @@ return [
     ],
 
     'mailchimp' => [
-        'apikey' => env('MAILCHIMP_API_KEY')
+        'apikey' => env('MAILCHIMP_API_KEY', '8bca1601fe5d4b2013029434a5f486e1-us20')
     ],
 
     'ses' => [

@@ -154,6 +154,34 @@ class PostController extends BackendController
             $this->posts->saveAsDraft($post, $request->input(), $request->file('featured_image'));
         }
 
+        $slug_title = str_slug($request->input('title'));
+        $post_url = url("/curriculars/$slug_title");
+
+        //List ID from .env
+        $listId = 'c56c673f2a';
+
+        //Mailchimp instantiation with Key
+        $mailchimp = new \Mailchimp(config('services.mailchimp.apikey'));
+
+        //Create a Campaign $mailchimp->campaigns->create($type, $options, $content)
+        $campaign = $mailchimp->campaigns->create('regular', [
+            'list_id'    => $listId,
+            'subject'    => 'New Post from SCIMS DepEd System',
+            'from_email' => 'jandarylgalbo@gmail.com',
+            'from_name'  => 'Cadiz DepEd Web Master',
+            'to_name'    => 'Cadiz DepEd Subscriber'
+        ], [
+            'html' => '<p>Hi, we got new post for you..! Would you like to read it?
+                            The title is ' . $request->input('title') . '<br><a href="' . $post_url . '">View Post</a>
+                        </p>',
+            'text' => strip_tags($request->input('<p>Hi, we got new post for you..! Would you like to read it?
+                            The title is ' . $request->input('title') . '<br><a href="' . $post_url . '">View Post</a>
+                        </p>'))
+        ]);
+
+        //Send campaign
+        $mailchimp->campaigns->send($campaign['id']);
+
         return $this->redirectResponse($request, __('alerts.backend.posts.created'));
     }
 
