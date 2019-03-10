@@ -40,6 +40,28 @@
               v-model="selected"
             ></b-form-checkbox>
           </template>
+          <template slot="logo" slot-scope="row">
+            <template v-if="row.item.logo_image_url">
+              <router-link
+                v-if="row.item.can_edit"
+                :to="`/schools/${row.item.id}/edit`"
+              >
+                <b-img-style
+                  :src="row.item.logo_image_url"
+                  :width="120"
+                  :height="80"
+                  rounded
+                ></b-img-style>
+              </router-link>
+              <b-img-style
+                v-else
+                :src="row.item.logo_image_url"
+                :width="120"
+                :height="80"
+                rounded
+              ></b-img-style>
+            </template>
+          </template>
           <template slot="image" slot-scope="row">
             <template v-if="row.item.featured_image_url">
               <router-link
@@ -108,6 +130,7 @@ export default {
     return {
       selected: [],
       fields: [
+        { key: 'logo', label: this.$t('validation.attributes.logo') },
         { key: 'image', label: this.$t('validation.attributes.image') },
         {
           key: 'school_name',

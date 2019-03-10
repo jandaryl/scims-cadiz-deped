@@ -37,6 +37,8 @@ class School extends Model implements HasMedia
         'can_delete',
         'has_featured_image',
         'featured_image_url',
+        'has_logo_image',
+        'logo_image_url',
     ];
 
     protected $casts = [
@@ -66,6 +68,19 @@ class School extends Model implements HasMedia
     public function getFeaturedImageUrlAttribute()
     {
         if ($image = $this->getFirstMedia('featured image')) {
+            return $image->getUrl();
+        }
+    }
+
+    public function getHasLogoImageAttribute()
+    {
+        /* @var Media $media */
+        return (bool) $this->getFirstMedia('logo image');
+    }
+
+    public function getLogoImageUrlAttribute()
+    {
+        if ($image = $this->getFirstMedia('logo image')) {
             return $image->getUrl();
         }
     }

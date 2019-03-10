@@ -163,7 +163,47 @@
                 :state="state('contact_no')"
               ></b-form-input>
             </b-form-group>
+            <b-form-group
+              :label="$t('validation.attributes.schoolLogo')"
+              label-for="logo_image"
+              horizontal
+              :label-cols="2"
+              :feedback="feedback('logo_image')"
+            >
+              <div class="media">
+                <b-img-style
+                  v-if="model.logo_image_url"
+                  :src="model.logo_image_url"
+                  :width="120"
+                  :height="80"
+                  rounded
+                  fluid
+                  class="mr-2"
+                ></b-img-style>
 
+                <div class="media-body">
+                  <h6>{{ $t('labels.upload_image') }}</h6>
+                  <b-form-file
+                    id="logo_image"
+                    name="logo_image"
+                    ref="logoImageInput"
+                    :placeholder="$t('labels.no_file_chosen')"
+                    v-model="model.logo_image"
+                    :state="state('logo_image')"
+                    v-b-tooltip.hover
+                    :title="$t('labels.descriptions.allowed_image_types')"
+                  ></b-form-file>
+                  <a
+                    href="#"
+                    class="d-block mt-1"
+                    v-if="model.has_logo_image || model.logo_image"
+                    @click.prevent="deleteLogoImage"
+                  >
+                    {{ $t('labels.delete_image') }}
+                  </a>
+                </div>
+              </div>
+            </b-form-group>
             <b-form-group
               :label="$t('validation.attributes.schoolImage')"
               label-for="featured_image"
@@ -262,7 +302,10 @@ export default {
         contact_no: null,
         featured_image: null,
         featured_image_url: null,
-        has_featured_image: false
+        has_featured_image: false,
+        logo_image: null,
+        logo_image_url: null,
+        has_logo_image: false
       }
     }
   },
@@ -280,6 +323,11 @@ export default {
       this.$refs.featuredImageInput.reset()
       this.model.featured_image_url = null
       this.model.has_featured_image = false
+    },
+    deleteLogoImage() {
+      this.$refs.logoImageInput.reset()
+      this.model.logo_image_url = null
+      this.model.has_logo_image = false
     }
   }
 }

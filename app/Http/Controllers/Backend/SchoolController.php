@@ -77,7 +77,7 @@ class SchoolController extends BackendController
     {
         $this->authorize('create schools');
 
-        $this->schools->store($request->input(), $request->file('featured_image'));
+        $this->schools->store($request->input(), $request->file('featured_image'), $request->file('logo_image'));
 
         Tag::findOrCreate($request->input('school_name'));
 
@@ -94,7 +94,7 @@ class SchoolController extends BackendController
     {
         $this->authorize('edit schools');
 
-        $this->schools->update($school, $request->input(), $request->file('featured_image'));
+        $this->schools->update($school, $request->input(), $request->file('featured_image'), $request->file('logo_image'));
 
         Tag::findOrCreate($request->input('school_name'));
 
