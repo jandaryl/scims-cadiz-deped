@@ -12,6 +12,7 @@
 
     <!-- Logo -->
     <link rel="icon" type="image/ico" href="/images/AHIuanj.png">
+    <link rel="stylesheet" href="/css/tailwind.min.css">
 
     <!-- Styles -->
     @if ($stylePath = Html::asset('backend', 'backend.css'))
