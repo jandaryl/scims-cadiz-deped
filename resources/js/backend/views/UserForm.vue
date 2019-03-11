@@ -92,7 +92,24 @@
                 :state="state('password_confirmation')"
               ></b-form-input>
             </b-form-group>
-
+            <b-form-group
+              :label="$t('validation.attributes.school')"
+              label-for="tags"
+              horizontal
+              :label-cols="3"
+            >
+              <v-select
+                id="tags"
+                name="tags"
+                v-model="model.tags"
+                :placeholder="$t('labels.placeholders.schools')"
+                :options="tags"
+                :multiple="true"
+                :tags="true"
+                @search-change="getTags"
+              >
+              </v-select>
+            </b-form-group>
             <b-form-group
               :label="$t('validation.attributes.roles')"
               label-for="roles"
@@ -155,6 +172,7 @@ export default {
       modelName: 'user',
       resourceRoute: 'users',
       listPath: '/users',
+      tags: [],
       model: {
         name: null,
         email: null,
@@ -171,6 +189,15 @@ export default {
     this.roles = data
   },
   methods: {
+        async getTags(search) {
+      let { data } = await axios.get(this.$app.route('admin.tags.search'), {
+        params: {
+          q: search
+        }
+      })
+
+      this.tags = data.items
+    },
     onModelChanged() {
       if (this.model.roles) {
         this.model.roles = this.model.roles.map(item => {

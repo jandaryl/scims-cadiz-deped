@@ -146,6 +146,7 @@ return [
         'second'                                                    => 'Second',
         'title'                                                     => 'Title',
         'name'                                                      => 'Name',
+        'school'                                                    => 'School',
         'school_name'                                               => 'School Name',
         'school_id'                                                 => 'School ID',
         'district'                                                  => 'District',

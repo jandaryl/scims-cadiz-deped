@@ -71,8 +71,9 @@ return [
     ],
 
     'placeholders' => [
-        'route' => 'Select a valid internal route',
-        'tags'  => 'Select or create a category',
+        'route'    => 'Select a valid internal route',
+        'tags'     => 'Select or create a category',
+        'schools'  => 'Select a school',
     ],
 
     'cookieconsent' => [

@@ -1265,7 +1265,8 @@ export default {
             },
             "placeholders": {
                 "route": "Select a valid internal route",
-                "tags": "Select or create a category"
+                "tags": "Select or create a category",
+                "schools": "Select a school"
             },
             "cookieconsent": {
                 "message": "This website uses cookies to ensure you get the best experience on our website.",
@@ -1614,6 +1615,7 @@ export default {
                 "minute": "Minute",
                 "second": "Second",
                 "title": "Title",
+                "school": "School",
                 "school_name": "School Name",
                 "school_id": "School ID",
                 "district": "District",
