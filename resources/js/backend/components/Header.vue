@@ -18,14 +18,15 @@
       />
     </a>
     <SidebarToggler class="d-md-down-none" display="lg"></SidebarToggler>
-    <b-navbar-nav class="ml-auto">
-      <div class="inline-flex mr-24">
+      <div class="inline-flex ml-32">
         <img
         class="h-10 w-10 rounded-full mr-4 mt-2"
+        v-if="this.$app.user.id !== 1"
         :src="this.$app.schoolLogo"
         />
-        <p class="text-lg text-left pt-4 mr-6">{{ this.$app.schoolName }}</p>
+        <p v-if="this.$app.user.id !== 1" class="text-lg text-left pt-4 mr-6">{{ this.$app.schoolName }}</p>
       </div>
+    <b-navbar-nav class="ml-auto">
       <HeaderDropdown right class="px-3 d-none d-md-block">
         <template slot="header">
           <span class="d-md-down-none">
