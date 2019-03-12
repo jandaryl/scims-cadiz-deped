@@ -39,6 +39,8 @@
             'editorSiteUrl' => config('app.editor_site_url'),
             'locales' => LaravelLocalization::getSupportedLocales(),
             'user' => $loggedInUser,
+            'schoolLogo' => $loggedInUser->school->logo_image_url,
+            'schoolName' => $loggedInUser->school->school_name,
             'permissions' => session()->get('permissions'),
             'isImpersonation' => session()->has('admin_user_id') && session()->has('temp_user_id'),
             'usurperName' => session()->get('admin_user_name'),

@@ -126,6 +126,11 @@ class User extends Authenticatable
         });
     }
 
+    public function school()
+    {
+        return $this->hasOne('App\Models\School');
+    }
+
     public function getCanEditAttribute()
     {
         return !$this->is_super_admin || 1 === auth()->id();

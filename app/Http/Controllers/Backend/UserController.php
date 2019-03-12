@@ -56,14 +56,15 @@ class UserController extends BackendController
         ]);
 
         if ($request->get('exportData')) {
-            return $requestSearchQuery->export([
-                'name',
-                'email',
-                'active',
-                'last_access_at',
-                'created_at',
-                'updated_at',
-            ],
+            return $requestSearchQuery->export(
+                [
+                    'name',
+                    'email',
+                    'active',
+                    'last_access_at',
+                    'created_at',
+                    'updated_at',
+                ],
                 [
                     __('validation.attributes.name'),
                     __('validation.attributes.email'),
@@ -72,7 +73,8 @@ class UserController extends BackendController
                     __('labels.created_at'),
                     __('labels.updated_at'),
                 ],
-                'users');
+                'users'
+            );
         }
 
         return $requestSearchQuery->result([
@@ -93,7 +95,7 @@ class UserController extends BackendController
      */
     public function show(User $user)
     {
-        if (! $user->can_edit) {
+        if (!$user->can_edit) {
             // Only Super admin can access himself
             abort(403);
         }
@@ -204,6 +206,6 @@ class UserController extends BackendController
     public function activeToggle(User $user)
     {
         $this->authorize('edit users');
-        $user->update(['active' => ! $user->active]);
+        $user->update(['active' => !$user->active]);
     }
 }

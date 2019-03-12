@@ -49,6 +49,11 @@ class School extends Model implements HasMedia
         'media',
     ];
 
+    public function user()
+    {
+        return $this->belongsTo('App\Models\User');
+    }
+
     public function getCanEditAttribute()
     {
         return Gate::check('edit schools');

@@ -5,6 +5,7 @@ namespace App\Repositories;
 use Exception;
 use Carbon\Carbon;
 use App\Models\User;
+use App\Models\School;
 use App\Events\UserCreated;
 use App\Events\UserDeleted;
 use App\Events\UserUpdated;
@@ -96,7 +97,7 @@ class EloquentUserRepository extends EloquentBaseRepository implements UserRepos
             $user->timezone = $this->config->get('app.timezone');
         }
 
-        if (! $this->save($user, $input)) {
+        if (!$this->save($user, $input)) {
             throw new GeneralException(__('exceptions.backend.users.create'));
         }
 
@@ -116,17 +117,17 @@ class EloquentUserRepository extends EloquentBaseRepository implements UserRepos
      */
     public function update(User $user, array $input)
     {
-        if (! $user->can_edit) {
+        if (!$user->can_edit) {
             throw new GeneralException(__('exceptions.backend.users.first_user_cannot_be_edited'));
         }
 
         $user->fill(Arr::except($input, 'password'));
 
-        if ($user->is_super_admin && ! $user->active) {
+        if ($user->is_super_admin && !$user->active) {
             throw new GeneralException(__('exceptions.backend.users.first_user_cannot_be_disabled'));
         }
 
-        if (! $this->save($user, $input)) {
+        if (!$this->save($user, $input)) {
             throw new GeneralException(__('exceptions.backend.users.update'));
         }
 
@@ -145,21 +146,26 @@ class EloquentUserRepository extends EloquentBaseRepository implements UserRepos
      */
     private function save(User $user, array $input)
     {
-        if (isset($input['password']) && ! empty($input['password'])) {
+        if (isset($input['password']) && !empty($input['password'])) {
             $user->password = Hash::make($input['password']);
         }
 
-        if (! $user->save()) {
+        if (!$user->save()) {
             return false;
         }
+        $school_choice = implode($input['tags']);
+
+        $school = School::where('school_name', $school_choice)->first();
+
+        $school->user()->associate($user)->save();
 
         $roles = $input['roles'] ?? [];
 
-        if (! empty($roles)) {
+        if (!empty($roles)) {
             $allowedRoles = $this->roles->getAllowedRoles()->keyBy('id');
 
             foreach ($roles as $id) {
-                if (! $allowedRoles->has($id)) {
+                if (!$allowedRoles->has($id)) {
                     throw new GeneralException(__('exceptions.backend.users.cannot_set_superior_roles'));
                 }
             }
@@ -179,11 +185,11 @@ class EloquentUserRepository extends EloquentBaseRepository implements UserRepos
      */
     public function destroy(User $user)
     {
-        if (! $user->can_delete) {
+        if (!$user->can_delete) {
             throw new GeneralException(__('exceptions.backend.users.first_user_cannot_be_destroyed'));
         }
 
-        if (! $user->delete()) {
+        if (!$user->delete()) {
             throw new GeneralException(__('exceptions.backend.users.delete'));
         }
 
@@ -213,7 +219,7 @@ class EloquentUserRepository extends EloquentBaseRepository implements UserRepos
             return redirect()->route('admin.home');
         }
 
-        if (! session()->get('admin_user_id')) {
+        if (!session()->get('admin_user_id')) {
             session(['admin_user_id' => $authenticatedUser->id]);
             session(['admin_user_name' => $authenticatedUser->name]);
             session(['temp_user_id' => $user->id]);

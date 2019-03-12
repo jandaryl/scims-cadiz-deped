@@ -19,12 +19,12 @@
     </a>
     <SidebarToggler class="d-md-down-none" display="lg"></SidebarToggler>
     <b-navbar-nav class="ml-auto">
-      <div class="inline-flex">
+      <div class="inline-flex mr-24">
         <img
-        class="h-10 w-10 rounded mr-4 mt-2"
-        src="/images/AHIuanj.png"
+        class="h-10 w-10 rounded-full mr-4 mt-2"
+        :src="this.$app.schoolLogo"
         />
-        <p class="text-lg text-left pt-4 mr-6">Dr. Vicente F. Gustilo Memorial National High School</p>
+        <p class="text-lg text-left pt-4 mr-6">{{ this.$app.schoolName }}</p>
       </div>
       <HeaderDropdown right class="px-3 d-none d-md-block">
         <template slot="header">
