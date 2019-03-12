@@ -1,9 +1,0 @@
-{
-  "backend.css": "/dist/css/backend.933395e7404cdd08fbb7.css",
-  "backend.js": "/dist/js/backend.933395e7404cdd08fbb7.js",
-  "backend.css.map": "/dist/css/backend.933395e7404cdd08fbb7.css.map",
-  "backend.js.map": "/dist/js/backend.933395e7404cdd08fbb7.js.map",
-  "vendor-backend.js": "/dist/js/vendor-backend.48e74efa532951da6941.js",
-  "vendor-backend.js.map": "/dist/js/vendor-backend.48e74efa532951da6941.js.map",
-  "fonts/app.scss": "/dist/fonts/feather-webfont.woff?2cf523cd335b115a5678b068b56c3011"
-}
