@@ -22,9 +22,9 @@
         <img
         class="h-10 w-10 rounded-full mr-4 mt-2"
         v-if="this.$app.user.id !== 1"
-        :src="this.$app.schoolLogo"
+        :src="this.$app.school.logo_image_url"
         />
-        <p v-if="this.$app.user.id !== 1" class="text-lg text-left pt-4 mr-6">{{ this.$app.schoolName }}</p>
+        <p v-if="this.$app.user.id !== 1" class="text-lg text-left pt-4 mr-6">{{ this.$app.school.school_name }}</p>
       </div>
     <b-navbar-nav class="ml-auto">
       <HeaderDropdown right class="px-3 d-none d-md-block">
