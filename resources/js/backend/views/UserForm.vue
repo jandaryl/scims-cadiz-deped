@@ -189,7 +189,7 @@ export default {
     this.roles = data
   },
   methods: {
-        async getTags(search) {
+    async getTags(search) {
       let { data } = await axios.get(this.$app.route('admin.tags.search'), {
         params: {
           q: search
