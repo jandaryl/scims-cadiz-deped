@@ -153,11 +153,14 @@ class EloquentUserRepository extends EloquentBaseRepository implements UserRepos
         if (!$user->save()) {
             return false;
         }
-        $school_choice = implode($input['tags']);
 
-        $school = School::where('school_name', $school_choice)->first();
+        if (isset($input['tags'])) {
+            $school_choice = implode($input['tags']);
 
-        $school->user()->associate($user)->save();
+            $school = School::where('school_name', $school_choice)->first();
+
+            $school->user()->associate($user)->save();
+        }
 
         $roles = $input['roles'] ?? [];
 
