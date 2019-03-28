@@ -70,27 +70,6 @@
             ]
         }
     },
-    "scripts": {
-        "post-root-package-install": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ],
-        "post-create-project-cmd": [
-            "@php artisan key:generate"
-        ],
-        "post-autoload-dump": [
-            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover"
-        ],
-        "post-update-cmd": [
-            "@php artisan ide-helper:generate",
-            "@php artisan ide-helper:meta"
-        ],
-        "post-install-cmd": [
-            "php artisan storage:link",
-            "php artisan route:cache",
-            "php artisan config:cache"
-        ]
-    },
     "config": {
         "preferred-install": "dist",
         "sort-packages": true,
